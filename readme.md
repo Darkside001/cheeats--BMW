@@ -1,37 +1,4 @@
-# Coding the BMW F Chassis Vehicles
-
-(a work *in progress*)
-
-![Graphic](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4IhZEzpOCraK_vByD8TGUfYKhZmEfe74ZjpaRwloceNOnkO9d7w)
-
-> srsly though don't brick your car.
-
-## Requirements
-
-### Stack
-* BMW Vehicle 
-* [ENET Cable](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#q=bmw%20enet%20cable)
-* [E-SYS + PSDZData](http://f80.bimmerpost.com/forums/showthread.php?t=1040141)
-* [E-SYS Launcher Premium](https://mega.nz/#F!PV9lxa4J!wvP4wFcYZVF84JBfc__lAw)
-* Windows (native or virtual)
-* You
-
-### Understand the Codemandments.
-1. Clicking the "Code Default Values" Button == ☠
-2. Coding, or thinking about coding, the DME module == ☠☠
-3. Putting others' intellectual property (BMW's or otherwise) in a public repo == ☠☠☠
-
-## Desirements
-
-### Contribute.
-Share code: fork me, submit pull requests, ask to maintain the repo.
-
-### Be friendly.
-Seriously. Even when someone's being a newb.  
-
-## List of ECUs/Modules | Functions
-*This is incomplete as it's been taken from a MY2016*  
-*Some functions are deduced and may be incomplete/inaccurate*
+# Coding the BMW F Chassis Vehicle
 
 Module/ECU | Address | Function
 ---------- | :-----: | -------- 
@@ -73,5 +40,3 @@ VDC1|[76]|Vertical Dynamics Management
 ZBE3|[67]|iDrive Controller
 ZGW|[XX]|Central Gateway Module
 
-## Helpful Resources
-[bmwesys.com Guides](http://bmwesys.com/guides/) - credit to Antonio Vernacchia
