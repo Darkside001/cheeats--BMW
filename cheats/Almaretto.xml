@@ -2,32 +2,32 @@
 <FDL>
     <!--Almaretto-->
     <cafd id="000017BE" name="BDC_01" author="Almaretto" series="F015">
-        <code description="ENABLE  Electronic (Radio and Nav) SHUTOFF when drivers door opened">
+        <code description="HABILITAR APAGADO electrónico (Radio y navegación) cuando se abre la puerta del conductor">
             <group id="3020">
                 <function start="9" end="9" comment="TCM_LOGIC_R_OFF_DOOR" mask="00000001b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Electronic (Radio and Nav) SHUTOFF when drivers door opened">
+        <code description="DESACTIVAR EL APAGADO electrónico (radio y navegación) cuando se abre la puerta del conductor">
             <group id="3020">
                 <function start="9" end="9" comment="TCM_LOGIC_R_OFF_DOOR" mask="00000001b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Door Handle LED Lights while in reverse">
+        <code description="HABILITE las luces LED de la manija de la puerta con la marcha tras">
             <group id="3070">
                 <function start="128" end="128" mask="00000001b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE FRONT driver/passenger window Roll Up when doors opened">
+        <code description="HABILITAR La ventanilla delantera del conductor/pasajero se sube cuando se abren las puertas">
             <group id="3050">
                 <function start="0" end="0" mask="00000001b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE REAR driver/passenger window Roll Up when doors opened">
+        <code description="HABILITAR Ventana TRASERA del conductor/pasajero Subir cuando se abren las puertas">
             <group id="3051">
                 <function start="0" end="0" mask="00000001b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Open/Close windows and mirrors via keyFOB - CA (NA Cars)">
+        <code description="HABILITAR Abrir/Cerrar ventanas y espejos mediante llavero - CA (NA Cars)">
             <group id="3056">
                 <function start="0" end="0" mask="01000000b">aktiv</function>
                 <function start="0" end="0" mask="10000000b">aktiv</function>
@@ -40,33 +40,33 @@
                 <function start="7" end="7" mask="00000001b">aktiv</function>
             </group>
         </code>
-        <code description="Remove open/close window and mirror initiation delay">
+        <code description="Eliminar ventana de apertura/cierre y retraso de inicio de espejo">
             <group id="3056">
                 <function start="10" end="10" mask="11111111b">00</function>
             </group>
         </code>
-        <code description="Unlock doors when STOP engine (Older I-Step)">
+        <code description="Desbloquee las puertas al PARAR el motor (I-Step anterior)">
             <group id="3040">
                 <function start="2" end="2" mask="00001000b">aktiv</function>
             </group>
         </code>
-        <code description="Unlock doors when STOP engine - auto-locked (Newer I-Step)">
+        <code description="Desbloquear las puertas al PARAR el motor - bloqueo automático (I-Step más nuevo)">
             <group id="3041">
                 <function start="40" end="40" comment="CLI_DEFAULT_UNLOCK_AFTER_END_OF_DRIVING" mask="00000011b">nur_nach_v_verriegeln</function>
             </group>
         </code>
-        <code description="Unlock doors when STOP engine - auto or manual lock (Newer I-Step)">
+        <code description="Desbloquee las puertas al PARAR el motor: bloqueo automático o manual (I-Step más nuevo)">
             <group id="3041">
                 <function start="40" end="40" comment="CLI_DEFAULT_UNLOCK_AFTER_END_OF_DRIVING" mask="00000011b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Engine Start Without Holding Brake) (EXCLUDES I3)">
+        <code description="HABILITAR arranque del motor sin freno de retención) (EXCLUYE I3)">
             <group id="3020">
                 <function start="8" end="8" comment="TCM_STARTLOCK_BRAKE" mask="00000001b">nicht_aktiv</function>
                 <function start="8" end="8" comment="TCM_STARTLOCK_DRIVINGREADINESS" mask="00010000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Front and Rear DRL (8TL)">
+        <code description="HABILITAR DRL delantero y trasero (8TL)">
             <group id="3068">
                 <function start="31" end="31" mask="00110000b">drl_s</function>
             </group>
@@ -79,69 +79,69 @@
                 <function start="91" end="91" mask="00111111b">sl_2_r</function>
             </group>
         </code>
-        <code description="F15 - ENABLE Variable Light Distribution (VLD)">
+        <code description="F15 - HABILITAR Distribución de luz variable (VLD)">
             <group id="3073">
                 <function start="40" end="42" mask="11111111b">9C, 9C, 9C</function>
                 <function start="152" end="152" mask="00000001b">F015ENABLE</function>
             </group>
         </code>
-        <code description="DISABLE Auto Start/Stop (ASS) at every startup (Comfort Mode)">
+        <code description="DESACTIVAR Start/Stop automática (ASS) en cada inicio (Modo Confort)">
             <group id="3023">
                 <function start="0" end="0" mask="00010000b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Auto Start/Stop (ASS) at every startup (Eco Pro Mode)">
+        <code description="DESACTIVAR Start/Stop automática (ASS) en cada inicio (Modo Eco Pro)">
             <group id="3023">
                 <function start="1" end="1" mask="00001100b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Auto Start/Stop (ASS) Remembers Last Setting (ON or OFF)">
+        <code description="HABILITAR Start/Stop automático (ASS) Recuerda la última configuración (ON o OFF)">
             <group id="3023">
                 <function start="0" end="0" mask="00100000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Reduced Rain HeadLight Sensor Sensitivity (Insensitive)">
+        <code description="HABILITAR Sensibilidad reducida del sensor de faros de lluvia (insensible)">
             <group id="3130">
                 <function start="5" end="5" mask="00000111b">unempfindlich</function>
             </group>
         </code>
-        <code description="DISABLE Horn Lock Confirmation with Engine On">
+        <code description="DESACTIVAR la confirmación de bloqueo de la bocina con el motor encendido">
             <group id="3040">
                 <function start="0" end="0" mask="00000100b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Horn Lock Confirmation with Engine On">
+        <code description="HABILITAR Confirmación de bloqueo de bocina con el motor encendido">
             <group id="3040">
                 <function start="0" end="0" mask="00000100b">aktiv</function>
             </group>
         </code>
-        <code description="Change Number of Soft Turn Signal Blinks to 5 (Old I-STEP, Less than 3.59)">
+        <code description="Cambie el número de parpadeos suaves de las señales de giro a 5 (antiguo I-STEP, menos de 3,59)">
             <group id="3068">
                 <function start="7" end="7" comment="See Newer Coding if F025-16-07-501" mask="00000111b">04</function>
             </group>
         </code>
-        <code description="Change Number of Soft Turn Signal Blinks to 5 (New I-STEP, Greater then 3.59.x)">
+        <code description="Cambie el número de parpadeos suaves de las señales de giro a 5 (nuevo I-STEP, mayor que 3.59.x)">
             <group id="3069">
                 <function start="215" end="215" comment="Firmware F025-16-07-501, 00 = 1, 01 = 3, 02 =5" mask="00011000b">02</function>
             </group>
         </code>
-        <code description="ENABLE Increased Passenger Mirror Tilt (Curb View) in Reverse">
+        <code description="HABILITAR Mayor inclinación del espejo del pasajero (vista desde la acera) en reversa">
             <group id="3110">
                 <function start="1" end="1" mask="11111111b">5A</function>
             </group>
         </code>
-        <code description="Removes Trunk Open Delay (Instant) via KeyFOB">
+        <code description="Eliminar el retraso de apertura de troncal (instantáneo) mediante llave FOB">
             <group id="30D0">
                 <function start="18" end="18" mask="11111111b">wert_00</function>
             </group>
         </code>
-        <code description="ENABLE Increased Side Mirror Dimming (Tinted Windows)">
+        <code description="HABILITAR Mayor atenuación de los espejos laterales (vidrios polarizados)">
             <group id="3120">
                 <function start="23" end="23" comment="left mirror" mask="11111100b">39</function>
                 <function start="30" end="30" comment="right mirror" mask="11111100b">39</function>
             </group>
         </code>
-        <code description="F015 - ENABLE EU Brake Force Display (BFD) Light Behavior (Blink)">
+        <code description="F015 - HABILITAR el comportamiento de la luz de visualización de fuerza de frenado (BFD) de la UE (parpadeo)">
             <group id="3068">
                 <function start="16" end="16" comment="Default USA = glow brighter and wider" mask="00000011b">02</function>
             </group>
@@ -154,7 +154,7 @@
                 <function start="65" end="65" comment="MAPPING_BRAKEFORCED_2_R_OUTPUT" mask="00111111b">15</function>
             </group>
         </code>
-        <code description="F015 - ENABLE EU Brake Force Display (BFD) (Additional Settings) (TESTING)">
+        <code description="F015 - HABILITAR Visualización de fuerza de frenado UE (BFD) (Configuraciones adicionales) (PRUEBAS)">
             <group id="3064">
                 <function start="158" end="158" comment="MAPPING_BRAKEFORCED_1_L_PRIORITY" mask="11100000b">01</function>
                 <function start="159" end="159" comment="MAPPING_BRAKEFORCED_1_L_PWM_1_BFD" mask="11111111b">64</function>
@@ -178,231 +178,231 @@
                 <function start="71" end="71" comment="MAPPING_BRAKEFORCED_2_R_PWM_4" mask="00011111b">64</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Short Press = No Action)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (presionar brevemente = sin acción)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_SHORT" mask="00001111b">00</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Short Press = Open Trunk)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (presionar brevemente = abrir troncal)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_SHORT" mask="00001111b">02</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Short Press = Panic Alarm)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (presionar brevemente = alarma de pánico)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_SHORT" mask="00001111b">03</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Short Press = Follow-Me-Home)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (presionar brevemente = Sígueme-Casa)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_SHORT" mask="00001111b">04</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Short Press = Open Frunk - Front Boot)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (presionar brevemente = abrir Frunk - arranque frontal)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_SHORT" mask="00001111b">05</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Short Press = Auxillary Cooling)">
+        <code description="Cambiar el comportamiento del tercer botón (presionar brevemente = enfriamiento auxiliar)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_SHORT" mask="00001111b">07</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Medium Press = No Action)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (pulsación media = sin acción)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_MID" mask="11110000b">00</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Medium Press = Open Trunk)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (pulsación media = abrir Porton)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_MID" mask="11110000b">02</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Medium Press = Panic Alarm)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (pulsación media = alarma de pánico)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_MID" mask="11110000b">03</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Medium Press = Follow-Me-Home)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (presionar mediamente = Sígueme-Casa)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_MID" mask="11110000b">04</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Medium Press = Open Frunk - Front Boot)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (pulsación media = abrir Frunk - arranque frontal)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_MID" mask="11110000b">05</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Medium Press = Auxillary Cooling)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (pulsación media = refrigeración auxiliar)">
             <group id="30D0">
                 <function start="13" end="13" comment="RC_DEFAULT_IDG_3RD_BUTTON_MID" mask="11110000b">07</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Long Press = No Action)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (pulsación larga = sin acción)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_3RD_BUTTON_LONG" mask="00001111b">00</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Long Press = Open Trunk)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (presionar prolongadamente = abrir Porton)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_3RD_BUTTON_LONG" mask="00001111b">02</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Long Press = Panic Alarm)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (pulsación larga = alarma de pánico)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_3RD_BUTTON_LONG" mask="00001111b">03</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Long Press = Follow-Me-Home)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (pulsación larga = Sígueme-Casa)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_3RD_BUTTON_LONG" mask="00001111b">04</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Long Press = Open Frunk - Front Boot)">
+        <code description="Cambiar el comportamiento del tercer botón clave (presionar prolongadamente = abrir Frunk - arranque frontal)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_3RD_BUTTON_LONG" mask="00001111b">05</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 3RD Button (Long Press = Auxillary Cooling)">
+        <code description="Cambiar el comportamiento del tercer botón del mando a distancia (presionar prolongadamente = enfriamiento auxiliar)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_3RD_BUTTON_LONG" mask="00001111b">07</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Short Press = No Action)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar brevemente = sin acción)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_4TH_BUTTON_SHORT" mask="11110000b">00</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Short Press = Open Trunk)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar brevemente = abrir Porton)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_4TH_BUTTON_SHORT" mask="11110000b">02</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Short Press = Panic Alarm)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar brevemente = alarma de pánico)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_4TH_BUTTON_SHORT" mask="11110000b">03</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Short Press = Follow-Me-Home)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar brevemente = Sígueme-Casa)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_4TH_BUTTON_SHORT" mask="11110000b">04</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Short Press = Open Frunk - Front Boot)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar brevemente = abrir Frunk - arranque frontal)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_4TH_BUTTON_SHORT" mask="11110000b">05</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Short Press = Auxillary Cooling)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar brevemente = enfriamiento auxiliar)">
             <group id="30D0">
                 <function start="14" end="14" comment="RC_DEFAULT_IDG_4TH_BUTTON_SHORT" mask="11110000b">07</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Medium Press = No Action)">
+        <code description="Cambiar el comportamiento del 4.° botón del mando a distancia (presionar a medio nivel = sin acción)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_MID" mask="00001111b">00</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Medium Press = Open Trunk)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar a media altura = abrir Porton)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_MID" mask="00001111b">02</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Medium Press = Panic Alarm)">
+        <code description="Cambiar el comportamiento del 4.º botón del mando a distancia (pulsación media = alarma de pánico)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_MID" mask="00001111b">03</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Medium Press = Follow-Me-Home)">
+        <code description="Cambiar el comportamiento del 4.º botón del mando a distancia (pulsación media = Sígueme-Casa)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_MID" mask="00001111b">04</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Medium Press = Open Frunk - Front Boot)">
+        <code description="Cambiar el comportamiento del 4.º botón del mando a distancia (presionar a media altura = abrir frunk - arranque frontal)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_MID" mask="00001111b">05</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Medium Press = Auxillary Cooling)">
+        <code description="Cambiar el comportamiento del 4.° botón del mando a distancia (presionar mediamente = enfriamiento auxiliar)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_MID" mask="00001111b">07</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Long Press = No Action)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (pulsación larga = sin acción)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_LONG" mask="11110000b">00</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Long Press = Open Trunk)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar prolongadamente = abrir Porton)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_LONG" mask="11110000b">02</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Long Press = Panic Alarm)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (pulsación larga = alarma de pánico)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_LONG" mask="11110000b">03</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Long Press = Follow-Me-Home)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (pulsación larga = Sígueme-Casa)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_LONG" mask="11110000b">04</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Long Press = Open Frunk - Front Boot)">
+        <code description="Cambiar el comportamiento del cuarto botón del mando a distancia (presionar prolongadamente = abrir Frunk - arranque frontal)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_LONG" mask="11110000b">05</function>
             </group>
         </code>
-        <code description="Change Behavior of keyFOB 4TH Button (Long Press = Auxillary Cooling)">
+        <code description="Cambiar el comportamiento del 4.º botón del mando a distancia (pulsación larga = refrigeración auxiliar)">
             <group id="30D0">
                 <function start="15" end="15" comment="RC_DEFAULT_IDG_4TH_BUTTON_LONG" mask="11110000b">07</function>
             </group>
         </code>
-        <code description="ENABLE Ambiance Lighting controlled independent from Dimmer Switch">
+        <code description="HABILITAR Iluminación ambiental controlada independientemente del interruptor de atenuación">
             <group id="3070">
                 <function start="135" end="135" comment="AMBIENTE_NACHFUEHRUNG" mask="10000000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Ambiance Lighting controlled independent from Dimmer Switch">
+        <code description="DESACTIVAR Iluminación ambiental controlada independientemente del atenuador">
             <group id="3070">
                 <function start="135" end="135" comment="AMBIENTE_NACHFUEHRUNG" mask="10000000b">01</function>
             </group>
         </code>
-        <code description="Turn on Fog Lights with Welcome Lights - SOFT ON">
+        <code description="Encienda las luces antiniebla con luces de bienvenida - ENCENDIDO SUAVE">
             <group id="3063">
                 <function start="66" end="66" comment="MAPPING_NEBELSCHW_L_PART_OF" mask="11111111b">01</function>
                 <function start="79" end="79" comment="MAPPING_NEBELSCHW_R_PART_OF" mask="11111111b">01</function>
             </group>
         </code>
-        <code description="Turn on Fog Lights with Follow-Me-Home, or Alarm - HARD ON">
+        <code description="Encienda las luces antiniebla con Sígueme a casa o alarma - ENCENDIDO DURO">
             <group id="3063">
                 <function start="66" end="66" comment="MAPPING_NEBELSCHW_L_PART_OF" mask="11111111b">10</function>
                 <function start="79" end="79" comment="MAPPING_NEBELSCHW_R_PART_OF" mask="11111111b">10</function>
             </group>
         </code>
-        <code description="ENABLE Heated Steering Wheel Instrument Cluster Status">
+        <code description="HABILITAR Estado del grupo de instrumentos del volante con calefacción">
             <group id="3140">
                 <function start="18" end="18" comment="LHZ_CCM" mask="01000000b">01</function>
             </group>
         </code>
-        <code description="ENABLE DARK REAR WINDOW - MIRROR DIMMING">
+        <code description="HABILITAR VENTANA TRASERA OSCURA - ATENUACIÓN DEL ESPEJO">
             <group id="3120">
                 <function start="3" end="3" comment="ISP_HECKSCHEIBE" mask="00000110b">01</function>
             </group>
         </code>
-        <code description="ENABLE LIGHT REAR WINDOW - MIRROR DIMMING">
+        <code description="HABILITAR LUZ VENTANA TRASERA - ATENUACIÓN DEL ESPEJO">
             <group id="3120">
                 <function start="3" end="3" comment="ISP_HECKSCHEIBE" mask="00000110b">00</function>
             </group>
         </code>
     </cafd>
     <cafd id="00000092" name="IHKA_CBF" author="Almaretto" series="F015,F010">
-        <code description="ENABLE HVAC memory - A/C stay OFF if OFF at vehicle shutdown">
+        <code description="HABILITAR la memoria A/C: el aire acondicionado permanece apagado si está apagado al apagar el vehículo">
             <group id="3000">
                 <function start="5" end="5" mask="00010000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Air Re-Circulation memory - Remembers shutdown Setting">
+        <code description="HABILITAR la memoria de recirculación de aire: recuerda la configuración de apagado">
             <group id="3000">
                 <function start="0" end="0" mask="00000100b">aktiv</function>
             </group>
@@ -431,17 +431,17 @@
         </code>
     </cafd>
     <cafd id="000016EE" name="IHKA_VA02" author="Almaretto" series="F020,F020,I001">
-        <code description="ENABLE HVAC memory - A/C stay OFF if OFF at vehicle shutdown">
+        <code description="HABILITAR la memoria A/C: el aire acondicionado permanece apagado si está apagado al apagar el vehículo">
             <group id="3003">
                 <function start="0" end="0" comment="MEMORY_OFF" mask="00000010b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Air Re-Circulation memory - Remembers shutdown Setting">
+        <code description="HABILITAR la memoria de recirculación de aire: recuerda la configuración de apagado">
             <group id="3003">
                 <function start="0" end="0" comment="MEMORY_UMLUFT" mask="00000001b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE A/C from turning ON if Auto Button is pressed">
+        <code description="DESHABILITE el encendido del A/C si se presiona el botón Auto">
             <group id="3003">
                 <function start="0" end="0" mask="00000100b">aktiv</function>
             </group>
@@ -507,7 +507,7 @@
         </code>
     </cafd>
     <cafd id="000007C8" name="HKFM" author="Almaretto" series="F001,F010,F015,F025,F030,F045">
-        <code description="ENABLE Trunk Close via keyFOB/Footwell button (NA vehicles)">
+        <code description="HABILITAR Cierre de Maletero mediante llave FOB/botón de espacio para pies (vehículos NA)">
             <group id="3010">
                 <function start="0" end="0" mask="00001000b">aktiv</function>
                 <function start="2" end="2" mask="00000100b">aktiv</function>
@@ -516,12 +516,12 @@
         </code>
     </cafd>
     <cafd id="00000DED" name="HU_NBT" author="Almaretto">
-        <code description="ENABLE Call Log Timestamp">
+        <code description="HABILITAR Marca de tiempo del registro de llamadas">
             <group id="3003">
                 <function start="1" end="1" mask="01000000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Entire text (SMS) message display on iDrive">
+        <code description="HABILITAR la visualización de mensajes de texto completo (SMS) en iDrive">
             <group id="3000">
                 <function start="34" end="34" comment="MYINFO_DRIVING_TEXT_LENGTH" mask="00011100b">07</function>
                 <function start="34" end="34" comment="AKD_DRIVING_TEXT_LENGTH" mask="11100000b">07</function>
@@ -531,28 +531,28 @@
                 <function start="11" end="11" comment="PIM_DRIVING_TEXT_LENGTH" mask="00000111b">07</function>
             </group>
         </code>
-        <code description="ENABLE HUD Turnsignal. Part 1 of 2 - See KOMBI (Excludes 6WB DKOMBI)">
+        <code description="HABILITAR señal de giro HUD. Parte 1 de 2: ver KOMBI (excluye 6WB DKOMBI)">
             <group id="3001">
                 <function start="55" end="55" mask="10000000b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Lock/Unlock Sound Confirm Checkbox With alarm only">
+        <code description="DESACTIVAR Bloquear/Desbloquear sonido Confirmar casilla de verificación Solo con alarma">
             <group id="3000">
                 <function start="110" end="110" mask="00000001b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Lock/Unlock Sound Confirm Checkbox With alarm only">
+        <code description="HABILITAR Bloquear/Desbloquear sonido Confirmar casilla de verificación Solo con alarma">
             <group id="3000">
                 <function start="110" end="110" mask="00000001b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Sports Displays. Part 1 of 2. See KOMBI">
+        <code description="HABILITAR pantallas deportivas. Parte 1 de 2. Ver KOMBI">
             <group id="3000">
                 <function start="101" end="101" mask="00010000b">aktiv</function>
                 <function start="107" end="107" mask="00000100b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE AM Radio on Hybrid Vehicles (F15-40e/I012/I001)">
+        <code description="HABILITAR Radio AM en vehículos híbridos (F15-40e/I012/I001)">
             <group id="3002">
                 <function start="52" end="52" comment="RADIO_BAND_KW" mask="00001000b">aktiv</function>
             </group>
@@ -565,71 +565,71 @@
                 <function start="21" end="21" mask="00000001b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE HUD Distance Info (Part 1 of 3 - See KOMBI and KAFAS2)">
+        <code description="HABILITAR Información de distancia del HUD (Parte 1 de 3 - Ver KOMBI y KAFAS2)">
             <group id="3000">
                 <function start="97" end="97" mask="00001000b">aktiv</function>
             </group>
         </code>
-        <code description="Changes Default Time settings to 24H">
+        <code description="Cambia la configuración de hora predeterminada a 24 horas">
             <group id="3004">
                 <function start="8" end="8" mask="00010000b">24h</function>
             </group>
         </code>
-        <code description="ENABLE HUD Entertainment Details. Part 2 of 2. See KOMBI">
+        <code description="HABILITAR Detalles de entretenimiento de HUD. Parte 2 de 2. Ver KOMBI">
             <group id="3000">
                 <function start="21" end="21" comment="hud_entertainmentlist" mask="10000000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Additional Menu Item (Current Position) in Navigation System">
+        <code description="HABILITAR elemento de menú adicional (posición actual) en el sistema de navegación">
             <group id="3000">
                 <function start="96" end="96" mask="10000000b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Active Sound Design (M5 only). Part 2 of 2. See ASD">
+        <code description="DESACTIVAR Diseño de sonido activo (solo M5). Parte 2 de 2. Ver TEA">
             <group id="3000">
                 <function start="57" end="57" comment="ASD_SOUND_OFF" mask="00001000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Active Sound Design Configuration Menu (M5 only). Part 2 of 2. See ASD">
+        <code description="HABILITAR el menú de configuración de diseño de sonido activo (solo M5). Parte 2 de 2. Ver TEA">
             <group id="3000">
                 <function start="105" end="105" comment="ASD_CONFIGURATION" mask="00000001b">aktiv</function>
                 <function start="105" end="105" comment="ASD_SOUND_4" mask="00010000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Volume to be retained up to 50% rather than startup at 25%">
+        <code description="HABILITAR El volumen se retendrá hasta un 50% en lugar de iniciarse al 25%">
             <group id="3002">
                 <function start="3" end="3" comment="VOL_MAX_ON" mask="11111111b">32</function>
             </group>
         </code>
-        <code description="ENABLE 'Route Info' (Turn-by-Turn list of route)">
+        <code description="HABILITAR 'Información de ruta' (lista de rutas paso a paso)">
             <group id="3000">
                 <function start="59" end="59" comment="NAVI_ROAD_PREVIEW" mask="00100000b">aktiv</function>
             </group>
         </code>
-        <code description="Removes Speedlock for Office/Service Messages">
+        <code description="Eliminar bloqueo de velocidad para mensajes de oficina/servicio">
             <group id="3000">
                 <function start="35" end="35" comment="SERVICES_MESSAGES_SPEEDLOCK_CONDITION" mask="00111000b">00</function>
                 <function start="56" end="56" comment="OFFICE_MESSAGES_SPEEDLOCK_CONDITION" mask="00001110b">00</function>
             </group>
         </code>
-        <code description="ENABLE Owners Manual in Motion (Removes Speedlock)">
+        <code description="HABILITAR Manual del propietario en movimiento (elimina Speedlock)">
             <group id="3000">
                 <function start="0" end="0" comment="SL06_IBA_1" mask="00100000b">nicht_aktiv</function>
                 <function start="0" end="0" comment="SL07_IBA_2" mask="01000000b">nicht_aktiv</function>
                 <function start="2" end="2" comment="SL21_IBA_3" mask="00010000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Album Cover Scale to Full-Size">
+        <code description="HABILITAR la escala de la portada del álbum a tamaño completo">
             <group id="3000">
                 <function start="14" end="14" comment="ENT_MC_COVER_SCALE" mask="00100000b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Bluetooth Device Pairing Speedlock">
+        <code description="DESACTIVAR Speedlock de emparejamiento de dispositivos Bluetooth">
             <group id="3000">
                 <function start="1" end="1" comment="SL16_ADD_CEDEVICE" mask="10000000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Real-Time Traffic Info">
+        <code description="HABILITAR información de tráfico en tiempo real">
             <group id="3000">
                 <function start="59" end="59" comment="NAVI_TRAFFIC_INFO_MAP" mask="00010000b">aktiv</function>
             </group>
@@ -640,7 +640,7 @@
                 <function start="23" end="23" comment="TI_FALLBACK_DISABLED" mask="01000000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Rear Camera Zoom -Trailer Mode-">
+        <code description="HABILITAR Zoom de cámara trasera -Modo remolque-">
             <group id="3001">
                 <function start="54" end="54" comment="MACRO_TRAILER_COUPLING" mask="00000001b">aktiv</function>
             </group>
@@ -926,57 +926,57 @@
         </code>
     </cafd>
     <cafd id="000009C8" name="KOMBI L7_MID" author="Almaretto" series="F020,F030">
-        <code description="Trip Computer Auto Reset (Never)">
+        <code description="Reinicio automático de la computadora de viaje (nunca)">
             <group id="3000">
                 <function start="44" end="44" comment="BC_AUTORESET_ZEIT" mask="11111111b">FF</function>
             </group>
         </code>
-        <code description="Trip Computer Auto Reset (0 Hours)">
+        <code description="Reinicio automático de la computadora de viaje (0 horas)">
             <group id="3000">
                 <function start="44" end="44" comment="BC_AUTORESET_ZEIT" mask="11111111b">00</function>
             </group>
         </code>
-        <code description="DISABLE Digital Speed Display in Cluster">
+        <code description="DESACTIVAR la pantalla de velocidad digital en el grupo">
             <group id="3000">
                 <function start="1" end="1" comment="BC_DIGITAL_V" mask="00000010b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Digital Speed Display in Cluster">
+        <code description="HABILITAR la visualización de velocidad digital en el grupo">
             <group id="3000">
                 <function start="1" end="1" comment="BC_DIGITAL_V" mask="00000010b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Speed Correction">
+        <code description="ENABLE Corrección de velocidad">
             <group id="3000">
                 <function start="1" end="1" mask="01000000b">Aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Speed Correction">
+        <code description="DISABLE Corrección de velocidad">
             <group id="3000">
                 <function start="1" end="1" mask="01000000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Auto Start Stop notificaiton in Cluster">
+        <code description="DISABLE Auto Start Stop notificaiton en cuadro">
             <group id="3003">
                 <function start="6" end="6" mask="00001000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Day White Instrument Cluster at night">
+        <code description="HABILITAR Grupo de instrumentos blanco de día por la noche">
             <group id="3007">
                 <function start="10" end="10" mask="11111111b">FF</function>
             </group>
         </code>
-        <code description="ENABLE LIM Function. Part 1 of 2. See ICM">
+        <code description="ENABLE Función LIM. Parte 1 de 2. Ver ICM">
             <group id="3003">
                 <function start="3" end="3" mask="00000001b">aktiv</function>
             </group>
         </code>
-        <code description="Changes M3/M4 Instrument Cluster Startup Logo to GTS">
+        <code description="Cambia el logotipo de inicio del grupo de instrumentos M3/M4 a GTS">
             <group id="3000">
                 <function start="0" end="0" mask="11110000b">0C</function>
             </group>
         </code>
-        <code description="ENABLE Night Vision with Background Pedestrian Detection. Part 1 of 2. See NIVI">
+        <code description="HABILITE la visión nocturna con detección de peatones en segundo plano. Parte 1 de 2. Ver NIVI">
             <group id="3003">
                 <function start="7" end="7" comment="FGS_NIVI_KI_ENABLE" mask="00001000b">aktiv</function>
             </group>
@@ -1448,27 +1448,27 @@
         </code>
     </cafd>
     <cafd id="000000B5" name="CFAS-PLX_1" author="Almaretto" series="F010,F015,F030,F80">
-        <code description="Time Period Seats will Remember heating/cooling/massage settings (0 minutes)">
+        <code description="Período de tiempo Los asientos recordarán las configuraciones de calefacción/refrigeración/masaje (0 minutos)">
             <group id="3000">
                 <function start="4" end="4" comment="0 minutes" mask="00000011b">00</function>
             </group>
         </code>
-        <code description="Time Period Seats will Remember heating/cooling/massage settings (15 minutes)">
+        <code description="Período de tiempo Los asientos recordarán las configuraciones de calefacción/refrigeración/masaje (15 minutos)">
             <group id="3000">
                 <function start="4" end="4" comment="15 minutes" mask="00000011b">01</function>
             </group>
         </code>
-        <code description="Time Period Seats will Remember heating/cooling/massage settings (24 hours)">
+        <code description="Período de tiempo Los asientos recordarán las configuraciones de calefacción/refrigeración/masaje (24 horas)">
             <group id="3000">
                 <function start="4" end="4" comment="24 hours" mask="00000011b">02</function>
             </group>
         </code>
-        <code description="Time Period Seats will Remember heating/cooling/massage settings (Infinity)">
+        <code description="Período de tiempo Los asientos recordarán las configuraciones de calefacción/refrigeración/masaje (Infinito)">
             <group id="3000">
                 <function start="4" end="4" comment="Infinity" mask="00000011b">03</function>
             </group>
         </code>
-        <code description="Easy Entry/Exit Steering Wheel and Driver Seat. Step 1 of 2. See FRM for F10">
+        <code description="Volante y asiento del conductor de fácil entrada/salida. Paso 1 de 2. Consulte FRM para F10">
             <group id="3000">
                 <function start="0" end="0" mask="00011100b">Modus_FA_SLV</function>
             </group>
@@ -1521,7 +1521,7 @@
         </code>
     </cafd>
     <cafd id="00000223" name="TRSVC" author="Almaretto" series="F010,F030,F080">
-        <code description="Side Camera at All Speeds. Part 1 of 2. See PDC for Top/Rear">
+        <code description="Cámara lateral a todas las velocidades. Parte 1 de 2. Consulte el PDC para la parte superior/trasera">
             <group id="3000">
                 <function start="114" end="114" comment="Maximum speed side view can activate" mask="11111111b">FF</function>
                 <function start="115" end="115" comment="Auto-deactivate side view speed" mask="11111111b">FF</function>
@@ -1754,7 +1754,7 @@
         </code>
     </cafd>
     <cafd id="000024C3" name="FLE_02" author="Almaretto" series="F030">
-        <code description="F30LCI - HALO Brightness 100% with Non-Adaptive LED lowbeams. Do Both FLEs">
+        <code description="F30LCI - HALO Brillo 100% con luces bajas LED no adaptables. Hacer ambos FLEs">
             <group id="3004">
                 <function start="10" end="19" mask="11111111b">00, 00, 00, 00, 00, 00, 04, 00, 00, 00</function>
                 <function start="20" end="29" mask="11111111b">00, 00, 00, 00, 00, 00, 04, 00, 00, 00</function>
@@ -1923,57 +1923,57 @@
                 <function start="63" end="63" comment="P3.59 improvement" mask="11111111b">E1</function>
             </group>
         </code>
-        <code description="ENABLE Unlock doors when STOP engine – if auto-locked">
+        <code description="HABILITAR Desbloquear puertas al PARAR el motor (si está bloqueado automáticamente)">
             <group id="3040">
                 <function start="1" end="1" comment="CLM_UNLOCK_KL15OFF_AFTER_PIA_AUTO_LOCK" mask="00000010b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE FRONT Window Safety (Continued movement when doors opened). REM for Rear">
+        <code description="DESACTIVAR la seguridad de la ventana delantera (movimiento continuo cuando se abren las puertas). REM para parte trasera">
             <group id="3050">
                 <function start="0" end="0" comment="FH_TUERAUF_STOP_MAUT" mask="00000001b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Rear Tail-light with DRL (8TL). Part 1 of 2. See REM">
+        <code description="HABILITAR Luz trasera con DRL (8TL). Parte 1 de 2. Ver REM">
             <group id="3060">
                 <function start="31" end="31" mask="00110000b">TFL_S</function>
             </group>
         </code>
-        <code description="Reduce Automatic Headlamp Sensitivity">
+        <code description="Reducir la sensibilidad automática de los faros">
             <group id="3130">
                 <function start="5" end="5" mask="00000111b">unempfindlich</function>
             </group>
         </code>
-        <code description="Increase Soft Triple Blinker to Five (5) (EXCLUDES P3.61.x)">
+        <code description="Aumentar el parpadeo triple suave a cinco (5) (EXCLUYE P3.61.x)">
             <group id="3060">
                 <function start="7" end="7" mask="00000111b">04</function>
             </group>
         </code>
-        <code description="ENABLE EU Brake Light Behavior (Blink)">
+        <code description="HABILITAR el comportamiento de la luz de freno UE (parpadeo)">
             <group id="3060">
                 <function start="16" end="16" mask="00000011b">bremslicht_blinkend</function>
             </group>
         </code>
-        <code description="ENABLE Door Handle LED Lights while in reverse">
+        <code description="HABILITE las luces LED de la manija de la puerta mientras está en marcha tras">
             <group id="3070">
                 <function start="11" end="11" mask="00010000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Fog Lights with High Beams">
+        <code description="HABILITAR luces antiniebla con luces altas">
             <group id="3060">
                 <function start="20" end="20" mask="00100000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Fog Lights with Parking Lights">
+        <code description="HABILITAR luces antiniebla con luces de estacionamiento">
             <group id="3060">
                 <function start="29" end="29" mask="01000000b">aktiv</function>
             </group>
         </code>
-        <code description="Separates Ambient Light Level and Instrument Cluster Light Level">
+        <code description="Separa el nivel de luz ambiental y el nivel de luz del grupo de instrumentos">
             <group id="3070">
                 <function start="4" end="4" mask="10000000b" comment="AMBIENTE_NACHFUEHRUNG (default : aktiv)">nicht_aktiv</function>
             </group>
         </code>
-        <code description="Open Windows/Fold Mirrors with Keyfob or CA (Newer I-Step)">
+        <code description="Abra Ventanas/Espejos plegables con llavero o CA (I-Step más nuevo)">
             <group id="3110">
                 <function start="8" end="8" comment="ASP_AUSKLAPPEN_NACH_KOMFORTSCHLIESSEN" mask="00000001b">aktiv</function>
                 <function start="1" end="1" comment="ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN" mask="00000001b">aktiv</function>
@@ -1986,7 +1986,7 @@
                 <function start="1" end="1" comment="KOMFORTSCHLIESSUNG_PA" mask="00000100b">aktiv</function>
             </group>
         </code>
-        <code description="Open Windows/Fold Mirrors with Keyfob or CA (Older I-Step)">
+        <code description="Abra Ventanas/Espejos plegables con llavero o CA (I-Step anterior)">
             <group id="3110">
                 <function start="7" end="7" comment="ASP_AUSKLAPPEN_NACH_KOMFORTSCHLIESSEN" mask="00000001b">aktiv</function>
                 <function start="0" end="0" comment="ASP_BEIKLAPPEN_BEI_KOMFORTSCHLIESSEN" mask="10000000b">aktiv</function>
@@ -1999,50 +1999,50 @@
                 <function start="1" end="1" comment="KOMFORTSCHLIESSUNG_PA" mask="00000100b">aktiv</function>
             </group>
         </code>
-        <code description="Remove open/close window and mirror initiation delay">
+        <code description="Eliminar ventana de apertura/cierre y retraso de inicio de espejo">
             <group id="3053">
                 <function start="9" end="9" comment="KOMFORT_SCHLIESSEN" mask="11111111b">00</function>
             </group>
         </code>
-        <code description="Removes Trunk Opening Delay - 0 seconds (Older I-Step)">
+        <code description="Elimina el retraso en la apertura del maletero: 0 segundos (I-Step anterior)">
             <group id="3040">
                 <function start="10" end="10" comment="CLM_TIMEOUT_HK_SMO" mask="11111111b">00</function>
             </group>
         </code>
-        <code description="Removes Trunk Opening Delay - 0 seconds (Newer I-Step)">
+        <code description="Elimina el retraso en la apertura del maletero: 0 segundos (I-Step más nuevo)">
             <group id="3040">
                 <function start="6" end="6" comment="CLM_TIME_DELAY_BOOTLID" mask="11111111b">00</function>
             </group>
         </code>
-        <code description="Turn off taillight flashing when opening trunk via Comfort Access">
+        <code description="Apague el parpadeo de la luz trasera al abrir el maletero a través de Comfort Access">
             <group id="3040">
                 <function start="2" end="2" comment="CLM_SMO_INDICATOR" mask="00000100b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="Turn On LED Fog Lights with Welcome Lights">
+        <code description="Encienda las luces antiniebla LED con luces de bienvenida">
             <group id="3063">
                 <function start="55" end="55" comment="MAPPING_NEBELSCHW_L_PART_OF_WL" mask="11000000b">01</function>
                 <function start="66" end="66" comment="MAPPING_NEBELSCHW_R_PART_OF_WL" mask="11000000b">01</function>
             </group>
         </code>
-        <code description="ENABLE Increased Passenger Mirror Tilt (Curb View) in Reverse (OLD FIRMWARE)">
+        <code description="HABILITAR Mayor inclinación del espejo del pasajero (vista desde la acera) en reversa (FIRMWARE ANTIGUO)">
             <group id="3110">
                 <function start="1" end="1" comment="ASP_BORDSTEINAUTOMATIK_DELTA" mask="11111111b">5A</function>
             </group>
         </code>
-        <code description="ENABLE Increased Passenger Mirror Tilt (Curb View) in Reverse (P3.61.2)">
+        <code description="HABILITAR Mayor inclinación del espejo del pasajero (vista desde la acera) en reversa (P3.61.2)">
             <group id="3110">
                 <function start="2" end="2" comment="ASP_BORDSTEINAUTOMATIK_DELTA" mask="11111111b">5A</function>
             </group>
         </code>
-        <code description="ENABLE Smart Trunk Closing (Requires 322, 316, and 11-14 Prod Date">
+        <code description="HABILITAR el cierre inteligente del maletero (requiere fecha de producción 322, 316 y 11-14)">
             <group id="3030">
                 <function start="5" end="5" comment="CAM_SMART_CLOSER" mask="00000110b">01</function>
             </group>
         </code>
     </cafd>
     <cafd id="000007A1" name="REM_01" author="Almaretto" series="F030">
-        <code description="ENABLE Rear Tail-light with DRL. Part 2 of 2. See FEM_BODY">
+        <code description="HABILITAR Luz trasera con DRL. Parte 2 de 2. Ver FEM_BODY">
             <group id="3062">
                 <function start="220" end="220" comment="Turns On Left Tail-light (Inner Part) on with DRL" mask="00111111b">sl_2_l</function>
                 <function start="230" end="230" comment="Turns On Right Tail-light (Inner Part) on with DRL" mask="00111111b">sl_2_r</function>
@@ -2050,12 +2050,12 @@
                 <function start="210" end="210" comment="Turns On Right Tail-light (Outer Part) on with DRL" mask="00111111b">sl_r</function>
             </group>
         </code>
-        <code description="ENABLE REAR windows roll up while doors opened. FEM for Front">
+        <code description="HABILITAR Las ventanas TRASERAS se suben mientras se abren las puertas. FEM para frente">
             <group id="3050">
                 <function start="0" end="0" comment="FH_TUERAUF_STOP_MAUT" mask="00000001b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Top/Rear camera at any speed. See TRSVC for Side View">
+        <code description="HABILITE la cámara superior/trasera a cualquier velocidad. Ver TRSVC para vista lateral">
             <group id="3203">
                 <function start="7" end="7" comment="The speed when it auto disables top camera view" mask="11111111b">FF</function>
                 <function start="8" end="8" comment="The speed when it auto disables rear camera view" mask="11111111b">FF</function>
@@ -2063,13 +2063,13 @@
                 <function start="10" end="10" comment="The distance when it auto disables rear camera view" mask="11111111b">FF</function>
             </group>
         </code>
-        <code description="ENABLE Outer Light Flashing with EU Brake Force - LED Only">
+        <code description="HABILITAR Luz exterior intermitente con fuerza de frenado UE - Solo LED">
             <group id="3062">
                 <function start="110" end="110" comment="MAPPING_BRAKEFORCED_L_OUTPUT" mask="00111111b">bl_l</function>
                 <function start="120" end="120" comment="MAPPING_BRAKEFORCED_R_OUTPUT" mask="00111111b">bl_r</function>
             </group>
         </code>
-        <code description="Increase Outer Light Flashing with EU Brake Force - LED Only">
+        <code description="Aumente el parpadeo de la luz exterior con la fuerza de frenado de la UE: solo LED">
             <group id="3064">
                 <function start="17" end="17" comment="ESS_BLINKFREQ_1" mask="00001110b">05</function>
                 <function start="17" end="17" comment="ESS_BLINKFREQ_2" mask="01110000b">05</function>
@@ -2302,7 +2302,7 @@
         </code>
     </cafd>
     <cafd id="00001EF6" name="HU_NBT_EVO" author="Almaretto" series="F015,F030,G011">
-        <code description="ENABLE Video in Motion (VIM) - Only ID4 (Any Speed)">
+        <code description="HABILITAR Video en movimiento (VIM): solo ID4 (cualquier velocidad)">
             <group id="3000">
                 <function start="5" end="5" comment="VIDEO_HANDBRAKE" mask="00000100b">nicht_aktiv</function>
                 <function start="5" end="5" comment="VIDEO_FRONT_LOCKED" mask="00010000b">nicht_aktiv</function>
@@ -2315,7 +2315,7 @@
                 <function start="26" end="26" comment="SPEEDLOCK_X_KMH_MAX" mask="11111111b">FF</function>
             </group>
         </code>
-        <code description="ENABLE Video in Motion (VIM) - only 1D5 (Up to 63 kph)">
+        <code description="HABILITAR Video en movimiento (VIM): solo 1D5 (hasta 63 km/h)">
             <group id="3000">
                 <function start="5" end="5" comment="VIDEO_HANDBRAKE" mask="00000100b">nicht_aktiv</function>
                 <function start="5" end="5" comment="VIDEO_FRONT_LOCKED" mask="00010000b">nicht_aktiv</function>
@@ -2328,12 +2328,12 @@
                 <function start="26" end="26" comment="SPEEDLOCK_X_KMH_MAX" mask="11111111b">FF</function>
             </group>
         </code>
-        <code description="ENABLE Call Log Timestamp">
+        <code description="HABILITAR Marca de tiempo del registro de llamadas">
             <group id="3003">
                 <function start="1" end="1" comment="TIMESTAMP_DISPLAY" mask="01000000b">aktiv</function>
             </group>
         </code>
-        <code description="Displays entire text (SMS) message on iDrive">
+        <code description="Muestra mensajes de texto completo (SMS) en iDrive">
             <group id="3003">
                 <function start="11" end="11" comment="PIM_Driving_Text_Length" mask="00000111b">whole_text</function>
             </group>
@@ -2344,22 +2344,22 @@
                 <function start="138" end="138" comment="BMWINFO_DRIVING_TEXT_LENGTH" mask="00000111b">whole_text</function>
             </group>
         </code>
-        <code description="ENABLE HUD Turnsignal. Part 1 of 2. Go to KOMBI. (Excludes 6WB)">
+        <code description="HABILITAR señal de giro HUD. Parte 1 de 2. Ir a KOMBI. (Excluye 6WB)">
             <group id="300C">
                 <function start="0" end="0" comment="HUD_TURNSIGNAL" mask="01000000b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Lock/Unlock Sound Confirm Checkbox With alarm only">
+        <code description="DESACTIVAR Bloquear/Desbloquear sonido Confirmar casilla de verificación Solo con alarma">
             <group id="3000">
                 <function start="110" end="110" comment="Acoustical_lock_confirm" mask="00000001b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Lock/Unlock Sound Confirm Checkbox With alarm only">
+        <code description="HABILITAR Bloquear/Desbloquear sonido Confirmar casilla de verificación Solo con alarma">
             <group id="3000">
                 <function start="110" end="110" comment="Acoustical_lock_confirm" mask="00000001b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Sports Displays - Red/Silver.">
+        <code description="HABILITAR Pantallas deportivas: rojo/plateado.">
             <group id="3000">
                 <function start="133" end="133" comment="M_VEHICLE" mask="01000000b">aktiv</function>
             </group>
@@ -2368,7 +2368,7 @@
                 <function start="9" end="9" comment="EFF_DYN_SPORT_CID" mask="00100000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Sports Displays - Amber Standard.">
+        <code description="HABILITAR Pantallas deportivas: ámbar estándar.">
             <group id="3000">
                 <function start="133" end="133" comment="M_VEHICLE" mask="01000000b">nicht_aktiv</function>
             </group>
@@ -2377,13 +2377,13 @@
                 <function start="9" end="9" comment="EFF_DYN_SPORT_CID" mask="00100000b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Office/Service Message Function Speed Lock-Out">
+        <code description="DESACTIVAR Función de mensaje de oficina/servicio Bloqueo de velocidad">
             <group id="3000">
                 <function start="136" end="136" comment="OFFICE_MESSAGES_SPEEDLOCK_CONDITION" mask="00111000b">none</function>
                 <function start="138" end="138" comment="SERVICES_MESSAGES_SPEEDLOCK_CONDITION" mask="00111000b">none</function>
             </group>
         </code>
-        <code description="ENABLE IDrive DRL-selectable menu item (8TN US Typecode)">
+        <code description="HABILITAR elemento de menú seleccionable por IDrive DRL (código tipográfico 8TN EE. UU.)">
             <group id="3000">
                 <function start="92" end="92" comment="DAYDRIVING_LIGHT" mask="00011000b">standard</function>
             </group>
@@ -2397,24 +2397,24 @@
                 <function start="0" end="0" comment="NAVI_DESTINATION_INPUT_US" mask="00000100b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Default Time settings to 24H">
+        <code description="HABILITAR la configuración de hora predeterminada en 24 horas">
             <group id="3004">
                 <function start="8" end="8" comment="DEFAULT_ZEIT_EINHEIT" mask="00010000b">24h</function>
             </group>
         </code>
-        <code description="Allows volume to be retained up to 100% rather than startup at 25%">
+        <code description="Permite retener el volumen hasta el 100% en lugar de iniciar al 25%">
             <group id="3002">
                 <function start="3" end="3" comment="VOL_MAX_ON" mask="11111111b">32</function>
             </group>
         </code>
-        <code description="ENABLE Owners Manual in Motion (ID4 ONLY)">
+        <code description="HABILITAR Manual del propietario en Motion (SOLO ID4)">
             <group id="3000">
                 <function start="0" end="0" comment="SL06_IBA_1" mask="00100000b">nicht_aktiv</function>
                 <function start="0" end="0" comment="SL07_IBA_2" mask="01000000b">nicht_aktiv</function>
                 <function start="2" end="2" comment="SL21_IBA_3" mask="00010000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE All Video Codecs and Video Import">
+        <code description="HABILITAR todos los códecs de vídeo y la importación de vídeo">
             <group id="3000">
                 <function start="15" end="15" comment="ENT_CODEC_OGG" mask="00010000b">aktiv</function>
                 <function start="15" end="15" comment="ENT_CODEC_XVID" mask="00100000b">aktiv</function>
@@ -2423,38 +2423,38 @@
                 <function start="32" end="32" comment="API_USB_VIDEO" mask="00000110b">both</function>
             </group>
         </code>
-        <code description="M Performance Start Animation of HMI">
+        <code description="Animación de inicio de rendimiento M de HMI">
             <group id="3001">
                 <function start="62" end="62" comment="STARTUP_TYPE" mask="00000110b">animation</function>
                 <function start="62" end="62" comment="STARTUP_EMBLEM" mask="01111000b">variant_01</function>
             </group>
         </code>
-        <code description="DISABLE STARTUP/CAMERA Legal Disclaimers">
+        <code description="DESACTIVAR INICIO/CÁMARA Avisos legales">
             <group id="3001">
                 <function start="58" end="58" comment="LEGAL_DISCLAIMER_TIME" mask="11111111b">00</function>
                 <function start="52" end="52" comment="MACRO_CAM_LEGALDISCLAIMER" mask="11111111b">00</function>
                 <function start="53" end="53" comment="MACRO_NIVICAM_LDISCLAIMER" mask="11111111b">00</function>
             </group>
         </code>
-        <code description="Show Tire Pressure and Temperature in iDrive">
+        <code description="Mostrar presión y temperatura de los neumáticos en iDrive">
             <group id="3001">
                 <function start="1" end="1" comment="RDC_SAFETY" mask="00100000b">aktiv</function>
                 <function start="66" end="66" comment="RDC_DRUCK_TEMP" mask="00001100b">druck_und_temperatur</function>
             </group>
         </code>
-        <code description="ENABLE Trip Import via USB">
+        <code description="HABILITAR Importación de viaje vía USB">
             <group id="3006">
                 <function start="3" end="3" comment="navi_trip_import" mask="00000001b">aktiv</function>
                 <function start="3" end="3" comment="navi_dest_import" mask="00000100b">aktiv</function>
                 <function start="3" end="3" comment="navi_mypoi_import" mask="00010000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Rear Camera Zoom -Trailer Mode-">
+        <code description="HABILITAR Zoom de cámara trasera -Modo remolque-">
             <group id="3001">
                 <function start="54" end="54" comment="macro_trailer_coupling" mask="00000001b">Aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Transfer of Phone Ringtone to Vehicle (Iphone Only)">
+        <code description="HABILITAR la transferencia del tono de llamada del teléfono al vehículo (solo iPhone)">
             <group id="3003">
                 <function start="6" end="6" comment="INBAND_RINGING" mask="10000000b">aktiv</function>
             </group>
@@ -2464,26 +2464,26 @@
                 <function start="52" end="52" comment="RADIO_BAND_KW" mask="00001000b">aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Bluetooth Device and NFC Pairing and Beam Speedlock">
+        <code description="HABILITAR dispositivo Bluetooth y emparejamiento NFC y Beam Speedlock">
             <group id="3000">
                 <function start="12" end="12" comment="NFC_BT_PAIRING_SPEEDLOCK" mask="00001000b">nicht_aktiv</function>
                 <function start="12" end="12" comment="NFC_BEAM_SPEEDLOCK" mask="00010000b">nicht_aktiv</function>
                 <function start="1" end="1" comment="SL16_ADD_CEDEVICE" mask="10000000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Bluetooth Device and NFC Pairing and Beam Speedlock (Untested)">
+        <code description="DESACTIVAR dispositivo Bluetooth y emparejamiento NFC y Beam Speedlock (no probado)">
             <group id="3000">
                 <function start="12" end="12" comment="NFC_BT_PAIRING_SPEEDLOCK" mask="00001000b">aktiv</function>
                 <function start="12" end="12" comment="NFC_BEAM_SPEEDLOCK" mask="00010000b">aktiv</function>
                 <function start="1" end="1" comment="SL16_ADD_CEDEVICE" mask="10000000b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE Speller Touchpad Speedlock">
+        <code description="DESACTIVAR Speedlock del panel táctil del ortográfico">
             <group id="3000">
                 <function start="31" end="31" comment="SPEEDLOCK_SPELLER_INPUT" mask="00000111b">none_locked</function>
             </group>
         </code>
-        <code description="ENABLE MIRACAST Function. See WLAN">
+        <code description="HABILITAR la función MIRACAST. Ver WLAN">
             <group id="3000">
                 <function start="6" end="6" comment="ENT_MIRACAST" mask="10000000b">aktiv</function>
                 <function start="13" end="13" comment="ENT_MC_WLAN_STREAM_DMP" mask="10000000b">aktiv</function>
@@ -2494,12 +2494,12 @@
                 <function start="20" end="20" comment="WLAN_STATUS" mask="10000000b">aktiv</function>
             </group>
         </code>
-        <code description="DISABLE MIRACAST Display Settings">
+        <code description="DESACTIVAR la configuración de pantalla MIRACAST">
             <group id="3000">
                 <function start="30" end="30" comment="ENT_MIRACAST_DISPLAY_SETTINGS" mask="00001000b">nicht_aktiv</function>
             </group>
         </code>
-        <code description="ENABLE Album Cover Scale to Full-Size">
+        <code description="HABILITAR la escala de la portada del álbum a tamaño completo">
             <group id="3000">
                 <function start="14" end="14" comment="ENT_MC_COVER_SCALE" mask="00100000b">aktiv</function>
             </group>
@@ -2514,7 +2514,7 @@
                 <function start="109" end="109" comment="SPEEDLOCK_HMI_TUNER" mask="00000001b">00</function>
             </group>
         </code>
-        <code description="Changes Fueling POI to ONLY CHARGING Station (Default = Petrol + Diesel)">
+        <code description="Cambia el PDI de abastecimiento de combustible a SÓLO estación de CARGA (Predeterminado = gasolina + diésel)">
             <group id="3006">
                 <function start="30" end="30" comment="CAR_TYPE_POI = Charge" mask="00000011b">00</function>
             </group>
