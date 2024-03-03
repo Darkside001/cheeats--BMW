@@ -5,24 +5,24 @@
 	last updated: 2023-08-17
     -->
    <cafd id="00000911" name="ACSM_4B" author="Botho (public)" series="F020,F030">
-      <code description="Ceinture de sécurité: Durée du rappel à 10s (default: 100s)">
+      <code description="Cinturón de seguridad: duración del recordatorio 10 s (predeterminado: 100 s)">
          <group id="3001">
             <function start="3" end="3" mask="11111111b" comment="GWF_SBR_WARNDAUER (default: 64)">0A</function>
          </group>
       </code>
-      <code description="Ceinture de sécurité: désactive le gong de rappel">
+      <code description="Cinturón de seguridad: desactiva el gong recordatorio">
          <group id="3000">
             <function start="15" end="15" mask="00000100b" comment="SeatBeltReminder_SBR_Fahrer (default: aktiv)">nicht_aktiv</function>
             <function start="15" end="15" mask="00000010b" comment="SeatBeltReminder_SBR_Beifahrer (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Ceinture de sécurité: désactive l'indicateur dans l'instrumentation du tableau de bord">
+      <code description="Cinturón de seguridad: desactiva el indicador en la instrumentación del tablero.">
          <group id="3000">
             <function start="15" end="15" mask="00010000b" comment="Gurtzustandsanzeige_Fahrer_GWF_GZA_FA (default: aktiv)">nicht_aktiv</function>
             <function start="15" end="15" mask="00001000b" comment="Gurtzustandsanzeige_Beifahrer_GWF_GZA_BF (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Ceinture de sécurité: désactive le gong lorsque la ceinture est ejectée">
+      <code description="Cinturón de seguridad: desactiva el gong cuando se expulsa el cinturón.">
          <group id="3000">
             <function start="16" end="16" mask="00000001b" comment="SBR_PreWarning_Fahrer (default: aktiv)">nicht_aktiv</function>
             <function start="16" end="16" mask="00000010b" comment="SBR_PreWarning_Beifahrer (default: aktiv)">nicht_aktiv</function>
@@ -37,17 +37,17 @@
       </code>
    </cafd>
    <cafd id="00000794" name="FEM_01" author="Botho (public)" series="F020,F030">
-      <code description="Vitres avant: actives lors de l'ouverture des portes avant">
+      <code description="Ventanas delanteras: activas al abrir las puertas delanteras">
          <group id="3050">
             <function start="0" end="0" mask="00000001b" comment="FH_TUERAUF_STOP_MAUT (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Accès confort: Délai de fermeture automatique à 30s sans action sur les portes (default: 120s)">
+      <code description="Acceso confort: Retardo de cierre automático de 30s sin acción en las puertas (por defecto: 120s)">
          <group id="3040">
             <function start="7" end="7" mask="11111111b" comment="CLM_TIME_PIA_LOCK_AT_TIMEOUT (default: 0C)">03</function>
          </group>
       </code>
-      <code description="Accès confort: Activation Panic Alarm et tempo télécommande 500ms (SHORT=Follow-Me-Home ; MID=Coffre ; LONG=Panic Alarm)">
+      <code description="Acceso Confort: Activación de Alarma de Pánico y retardo de control remoto 500ms (SHORT=Follow-Me-Home; MID=Troncal; LARGO=Alarma de Pánico)">
          <group id="30D0">
             <function start="2" end="2" mask="00000100b" comment="RC_PANIC_ALARM (default: nicht_aktiv)">aktiv</function>
             <function start="3" end="3" mask="00001111b" comment="RC_DEFAULT_IDG_3RD_BUTTON_SHORT (default: 00)">04</function>
@@ -57,86 +57,86 @@
             <function start="9" end="9" mask="11111111b" comment="RC_TIME_DELAY_PANIC (default: 14)">28</function>
          </group>
       </code>
-      <code description="Accès confort: Nb de Clignotants à l'ouverture = 3 (default: 2)">
+      <code description="Acceso confort: Número de intermitentes al abrir = 3 (por defecto: 2)">
          <group id="3060">
             <function start="6" end="6" mask="00001100b" comment="QUITTBLK_ENTSCHAERFEN_ANZAHL (default: 02)">03</function>
          </group>
       </code>
-      <code description="Accès confort: Nb de Clignotants à la fermeture = 2 (default: 1)">
+      <code description="Acceso confort: Número de indicadores al cerrar = 2 (por defecto: 1)">
          <group id="3060">
             <function start="6" end="6" mask="00000011b" comment="QUITTBLK_SICHERN_ANZAHL (default: 01)">02</function>
          </group>
       </code>
-      <code description="Accès confort: Activation accès confort à la fermeture après 1s (default: 1,5s)">
+      <code description="Acceso confort: Activación del acceso confort al cerrar después de 1s (por defecto: 1,5s)">
          <group id="3053">
             <function start="9" end="9" mask="11111111b" comment="KOMFORT_SCHLIESSEN (default: 0F)">0A</function>
          </group>
       </code>
-      <code description="Accès confort: Activation accès confort à l'ouverture après 2s (2,5s par default)">
+      <code description="Acceso confort: Activación del acceso confort al abrir después de 2s (2,5s por defecto)">
          <group id="3053">
             <function start="8" end="8" mask="11111111b" comment="KOMFORT_OEFFNEN (default: 19)">14</function>
          </group>
       </code>
-      <code description="Accès confort: Fermeture du coffre avec le pied (nécessite 322, 316) (Step 1 sur 2 - voir HKFM)">
+      <code description="Acceso cómodo: Cerrar el maletero con el pie (requiere 322, 316) (Paso 1 de 2 - ver HKFM)">
          <group id="3030">
             <function start="5" end="5" mask="00000110b" comment="CAM_SMART_CLOSER (default: aktiv si production date après 0315)">aktiv</function>
          </group>
       </code>
-      <code description="Accès confort: Délais d'ouverture (Smart Oppening only) du coffre à 0,3s (default 0,7s)">
+      <code description="Acceso confort: Retardo de apertura (solo Smart Oppening) del maletero a 0,3s (por defecto 0,7s)">
          <group id="3040">
             <function start="12" end="12" mask="11111111b" comment="CLM_TIMEOUT_HK_SMO (default: wert_03)">wert_02</function>
          </group>
       </code>
-      <code description="Accès confort: Délais d'ouverture du coffre (no Smart Oppening) à 0,1s (default 0,3s)">
+      <code description="Acceso confort: Retardo de apertura del maletero (sin apertura inteligente) a 0,1 s (por defecto 0,3 s)">
          <group id="3040">
             <function start="6" end="6" mask="11111111b" comment="CLM_TIME_DELAY_BOOTLID (default: wert_02)">wert_01</function>
          </group>
       </code>
-      <code description="Accès confort: Désactive les clignotant à l'ouverture du coffre (default: activé)">
+      <code description="Acceso confort: Desactiva las luces intermitentes al abrir el maletero (por defecto: activado)">
          <group id="3040">
             <function start="2" end="2" mask="00000100b" comment="CLM_SMO_INDICATOR (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Vérouillage des portes: seuil de vitesse à 8km (uniquement si le vérouillage automatique activé - 16km par default)">
+      <code description="Bloqueo de puertas: umbral de velocidad a 8 km (sólo si el bloqueo automático está activado - 16 km por defecto)">
          <group id="3040">
             <function start="8" end="8" mask="11111111b" comment="CLM_SPEED_LIMIT_PIA_AUTO_LOCK (default: wert_04)">wert_03</function>
          </group>
       </code>
-      <code description="Dévérouillage des portes à l'arrêt du moteur (uniquement si le vérouillage automatique activé)">
+      <code description="Desbloqueo de las puertas cuando el motor se para (sólo si el bloqueo automático está activado)">
          <group id="3040">
             <function start="1" end="1" mask="00000010b" comment="CLM_UNLOCK_KL15OFF_AFTER_PIA_AUTO_LOCK (default: aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Angel Eyes (DRL): Activation des feux de jour (Step 1 sur 3 - voir HU-NBT and REM)">
+      <code description="Angel Eyes (DRL): Activación de las luces de circulación diurna (Paso 1 de 3 - ver HU-NBT y REM)">
          <group id="3060">
             <function start="31" end="31" mask="00110000b" comment="TFL_MODUS (default: 02)">02</function>
          </group>
       </code>
-      <code description="Angel Eyes (DRL): Luminosité des feux de jour à 50% lorsque les Xenons sont allumés">
+      <code description="Angel Eyes (DRL): brillo de las luces de circulación diurna al 50% cuando los xenones están encendidos">
          <group id="3062">
             <function start="46" end="46" mask="11111111b" comment="MAPPING_STANDL_V_L_PWM_LEVEL_STANDARD (default: 8)">32</function>
             <function start="57" end="57" mask="11111111b" comment="MAPPING_STANDL_V_R_PWM_LEVEL_STANDARD (default: 8)">32</function>
          </group>
       </code>
-      <code description="Angel Eyes (DRL): Luminosité des feux de jour à 100% lorsque les Xenons sont allumés">
+      <code description="Angel Eyes (DRL): brillo de las luces de circulación diurna al 100% cuando los xenones están encendidos">
          <group id="3062">
             <function start="46" end="46" mask="11111111b" comment="MAPPING_STANDL_V_L_PWM_LEVEL_STANDARD (default: 8)">64</function>
             <function start="57" end="57" mask="11111111b" comment="MAPPING_STANDL_V_R_PWM_LEVEL_STANDARD (default: 8)">64</function>
          </group>
       </code>
-      <code description="Angel Eyes (DRL): Luminosité des feux de jour à 50% lorsque les feux de jour sont allumés">
+      <code description="Angel Eyes (DRL): las luces de circulación diurna brillan al 50% cuando las luces de circulación diurna están encendidas">
          <group id="3062">
             <function start="90" end="90" mask="11111111b" comment="MAPPING_TAGFAHRL_V_L_PWM_LEVEL_1 (default: 64)">32</function>
             <function start="101" end="101" mask="11111111b" comment="MAPPING_TAGFAHRL_V_R_PWM_LEVEL_1 (default: 64)">32</function>
          </group>
       </code>
-      <code description="Angel Eyes (DRL): Luminosité des feux de jour à 100% lorsque les feux de jour sont allumés">
+      <code description="Angel Eyes (DRL): brillo de las luces de circulación diurna al 100% cuando las luces de circulación diurna están encendidas">
          <group id="3062">
             <function start="90" end="90" mask="11111111b" comment="MAPPING_TAGFAHRL_V_L_PWM_LEVEL_1 (default: 64)">64</function>
             <function start="101" end="101" mask="11111111b" comment="MAPPING_TAGFAHRL_V_R_PWM_LEVEL_1 (default: 64)">64</function>
          </group>
       </code>
-      <code description="Xenon: activation de l'éclairage de virage (cornering light) - phares anti-brouillard nécessaires">
+      <code description="Xenón: activación de la luz de curvas - se requieren luces antiniebla">
          <group id="3073">
             <function start="218" end="218" mask="00000010b" comment="C_CLC_ENA (default: 01)">01</function>
             <function start="66" end="66" mask="00000001b" comment="C_BLC_ENA (default: 01)">01</function>
@@ -150,7 +150,7 @@
             <function start="121" end="121" mask="00111111b" comment="MAPPING_ABBIEGEL_R_OUTPUT (default: 0C)">0C</function>
          </group>
       </code>
-      <code description="Xenon: activation de l'éclairage de jour USA (sidemarker)">
+      <code description="Xenón: activación de las luces de circulación diurna EE.UU. (sidemarker)">
          <group id="3063">
             <function start="11" end="11" mask="00111111b" comment="MAPPING_SIDEMARKER_L_OUTPUT (default: off)">fra_v_l</function>
             <function start="22" end="22" mask="00111111b" comment="MAPPING_SIDEMARKER_R_OUTPUT (default: off)">fra_v_r</function>
@@ -160,157 +160,157 @@
             <function start="24" end="24" mask="11111111b" comment="MAPPING_SIDEMARKER_R_PWM_LEVEL_STANDARD (default: off)">8.2V</function>
          </group>
       </code>
-      <code description="Front light cleaning (Disable)">
+      <code description="Limpieza de luces delanteras (Desactivar)">
          <group id="3080">
             <function start="8" end="8" mask="00000001b" comment="WW_SCHEINWERFERREINIGUNG (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-	  <code description="Front light cleaning (Enable - Default)">
+	  <code description="Limpieza de luz frontal (Activada - Predeterminada)">
          <group id="3080">
             <function start="8" end="8" mask="00000001b" comment="WW_SCHEINWERFERREINIGUNG (default: aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Front light cleaning: Sprays number (2 - Default)">
+      <code description="Limpieza de luz delantera: Número de pulverizaciones (2 - Predeterminado)">
          <group id="3080">
             <function start="8" end="8" mask="00011000b" comment="WW_ANZAHL_SPRITZIMPULSE_SRA (default: 02)">02</function>
          </group>
       </code>
-      <code description="Front light cleaning: Sprays number (3)">
+      <code description="Limpieza de luces delanteras: Número de pulverizaciones (3)">
          <group id="3080">
             <function start="8" end="8" mask="00011000b" comment="WW_ANZAHL_SPRITZIMPULSE_SRA (default: 02)">03</function>
          </group>
       </code>
-      <code description="Front light cleaning: Wash cycles to enable next washing (10 - Default)">
+      <code description="Limpieza de la luz frontal: ciclos de lavado para permitir el siguiente lavado (10 - Predeterminado)">
          <group id="3080">
             <function start="2" end="2" mask="00011110b" comment="WW_ANZAHL_WASCHBET_ZUR_SRA (default: 0A)">0A</function>
          </group>
       </code>
-      <code description="Front light cleaning: Wash cycles to enable next washing (5)">
+      <code description="Limpieza ligera frontal: Ciclos de lavado para permitir el siguiente lavado (5)">
          <group id="3080">
             <function start="2" end="2" mask="00011110b" comment="WW_ANZAHL_WASCHBET_ZUR_SRA (default: 0A)">05</function>
          </group>
       </code>
-	  <code description="Front light cleaning: Time to wait before next washing (10 mins - Default)">
+	  <code description="Limpieza de la luz frontal: tiempo de espera antes del siguiente lavado (10 minutos - predeterminado)">
          <group id="3080">
             <function start="10" end="10" mask="00001111b" comment="WW_SRA_SPERRZEIT (default: 0A)">0A</function>
          </group>
       </code>
-      <code description="Front light cleaning: Time to wait before next washing (3 mins)">
+      <code description="Limpieza de la luz frontal: tiempo de espera antes del siguiente lavado (3 minutos)">
          <group id="3080">
             <function start="10" end="10" mask="00001111b" comment="WW_SRA_SPERRZEIT (default: 0A)">03</function>
          </group>
       </code>
-	  <code description="Front light cleaning: Time to wait before next washing (5 mins)">
+	  <code description="Limpieza de la luz frontal: tiempo de espera antes del siguiente lavado (5 minutos)">
          <group id="3080">
             <function start="10" end="10" mask="00001111b" comment="WW_SRA_SPERRZEIT (default: 0A)">05</function>
          </group>
       </code>
-	  <code description="Automatic rear wiper in reverse (Enable - Default)">
+	  <code description="Limpiaparabrisas trasero automático en reversa (Activado - Predeterminado)">
          <group id="3080">
             <function start="0" end="0" mask="10000000b" comment="WW_HECKWISCHER_EIN_RUECKWGANG (default: aktiv)">aktiv</function>
          </group>
       </code>
-	  <code description="Automatic rear wiper in reverse (Disable)">
+	  <code description="Limpiaparabrisas trasero automático en reversa (Desactivar)">
          <group id="3080">
             <function start="0" end="0" mask="10000000b" comment="WW_HECKWISCHER_EIN_RUECKWGANG (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-	  <code description="Rear wiper: Wipe cycles after washing (1)">
+	  <code description="Limpiaparabrisas trasero: ciclos de limpieza después del lavado (1)">
          <group id="3080">
             <function start="8" end="8" mask="11100000b" comment="WW_ANZAHL_NACHWISCHZ_HECK (default: 02)">01</function>
          </group>
       </code>
-	  <code description="Rear wiper: Wipe cycles after washing (2 - Default)">
+	  <code description="Limpiaparabrisas trasero: ciclos de limpieza después del lavado (2 - Default)">
          <group id="3080">
             <function start="8" end="8" mask="11100000b" comment="WW_ANZAHL_NACHWISCHZ_HECK (default: 02)">02</function>
          </group>
       </code>
-	  <code description="Rear wiper: Wipe cycles after washing (3)">
+	  <code description="Limpiaparabrisas trasero: ciclos de limpieza después del lavado (3)">
          <group id="3080">
             <function start="8" end="8" mask="11100000b" comment="WW_ANZAHL_NACHWISCHZ_HECK (default: 02)">03</function>
          </group>
       </code>
-	  <code description="Rear wiper: Wipe cycles after washing (4)">
+	  <code description="Limpiaparabrisas trasero: ciclos de limpieza después del lavado (4)">
          <group id="3080">
             <function start="8" end="8" mask="11100000b" comment="WW_ANZAHL_NACHWISCHZ_HECK (default: 02)">04</function>
          </group>
       </code>
-	  <code description="Front wiper: Wipe cycles after rear washing (1)">
+	  <code description="Limpiaparabrisas delantero: ciclos de limpieza después del lavado trasero (1)">
          <group id="3080">
             <function start="18" end="18" mask="01110000b" comment="WW_ANZAHL_NACHWISCHZ_FRONT (default: 03)">01</function>
          </group>
       </code>
-	  <code description="Front wiper: Wipe cycles after rear washing (2)">
+	  <code description="Limpiaparabrisas delantero: ciclos de limpieza después del lavado trasero (2)">
          <group id="3080">
             <function start="18" end="18" mask="01110000b" comment="WW_ANZAHL_NACHWISCHZ_FRONT (default: 03)">02</function>
          </group>
       </code>
-	  <code description="Front wiper: Wipe cycles after washing (3 - Default)">
+	  <code description="Limpiaparabrisas delantero: ciclos de limpieza después del lavado (3 - Default)">
          <group id="3080">
             <function start="18" end="18" mask="01110000b" comment="WW_ANZAHL_NACHWISCHZ_FRONT (default: 03)">03</function>
          </group>
       </code>
-	  <code description="Front wiper: Wipe cycles after rear washing (4)">
+	  <code description="Limpiaparabrisas delantero: ciclos de limpieza después del lavado trasero (4)">
          <group id="3080">
             <function start="18" end="18" mask="01110000b" comment="WW_ANZAHL_NACHWISCHZ_FRONT (default: 03)">04</function>
          </group>
       </code>
-      <code description="Rétroviseurs: fermeture autorisée en dessous de 49 km/h (default: 20 km/h)">
+      <code description="Retrovisores: cierre autorizado por debajo de 49 km/h (por defecto: 20 km/h)">
          <group id="3110">
             <function start="9" end="9" mask="11111111b" comment="ASP_MAX_GESCHWINDIGKEIT_BEIKLAPPEN (default: 14)">31</function>
          </group>
       </code>
-      <code description="Rétroviseurs: ouverture automatique à partir de 50 km/h (default: 40 km/h)">
+      <code description="Retrovisores: apertura automática a partir de 50 km/h (por defecto: 40 km/h)">
          <group id="3110">
             <function start="10" end="10" mask="11111111b" comment="ASP_GESCHWINDIGKEIT_AUTO_AUSKLAPPEN (default: 28)">32</function>
          </group>
       </code>
-      <code description="Rétroviseurs passager: Augmente le débattement lors de la marche arrière à 70 digits (default: 59 digits - I-Step après 3.61.x)">
+      <code description="Espejos del pasajero: aumenta el recorrido al dar marcha atrás a 70 dígitos (predeterminado: 59 dígitos - I-Step después de 3.61.x)">
          <group id="3110">
             <function start="2" end="2" mask="11111111b" comment="ASP_BORDSTEINAUTOMATIK_DELTA (default: 3B)">46</function>
          </group>
       </code>
-      <code description="Rétroviseurs passager: Rétablie le débattement lors de la marche arrière à 59 digits (default: 59 digits - I-Step après 3.61.x)">
+      <code description="Espejos del pasajero: restaura el recorrido al dar marcha atrás a 59 dígitos (predeterminado: 59 dígitos - I-Step después de 3.61.x)">
          <group id="3110">
             <function start="2" end="2" mask="11111111b" comment="ASP_BORDSTEINAUTOMATIK_DELTA (default: 3B)">3B</function>
          </group>
       </code>
-      <code description="Clignotants: nb de clignotements à 5 (default: 00 - I-Step avant de 3.61.x)">
+      <code description="Intermitentes: número de destellos en 5 (predeterminado: 00 - I-Step antes de 3.61.x)">
          <group id="3060">
             <function start="7" end="7" mask="00000111b" comment="BLINKZYKLEN_ANZAHL_TIPP (default: 00)">04</function>
          </group>
       </code>
-      <code description="-- Don't work -- Clignotants: nb de clignotements à 5 (00 = 1, 01 = 3, 02 = 5 ; default: 01 - I-Step après 3.61.x)">
+      <code description="-- No funciona - Parpadeo: número de parpadeos en 5 (00 = 1, 01 = 3, 02 = 5; predeterminado: 01 - I-Step después de 3.61.x)">
          <group id="3064">
             <function start="215" end="215" mask="00000001b" comment="PIA_DEFAULT_TIPPBLINKEN (default: 01)">02</function>
          </group>
       </code>
-      <code description="Clignotants: clignotement simple à l'ouverture du hayon (default: double)">
+      <code description="Intermitentes: destello único al abrir el portón trasero (predeterminado: doble)">
          <group id="3060">
             <function start="6" end="6" mask="10000000b" comment="HECKKLAPPE_REVERSIEREN_BLINKEN (default: 01)">00</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard arrières: Activation (Step 2 sur 2 - voir REM_01)">
+      <code description="Luces antiniebla traseras: Activación (Paso 2 de 2 - ver REM_01)">
          <group id="3060">
             <function start="7" end="7" mask="00001000b" comment="NSL_VERBAUT (default: 01)">01</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard arrières: Désactivation (Step 2 sur 2 - voir REM_01)">
+      <code description="Luces antiniebla traseras: Desactivación (Paso 2 de 2 - ver REM_01)">
          <group id="3060">
             <function start="7" end="7" mask="00001000b" comment="NSL_VERBAUT (default: 01)">00</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard: permet aux phares anti-brouillard de rester allumés même en plein phares">
+      <code description="Luces antiniebla: permite que las luces antiniebla permanezcan encendidas incluso cuando están encendidas las luces altas.">
          <group id="3060">
             <function start="20" end="20" mask="00100000b" comment="NSW_AUS_BEI_FL (default: 00)">00</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard: permet aux phares anti-brouillard de rester allumés avec les phares de parking">
+      <code description="Luces antiniebla: permite que las luces antiniebla permanezcan encendidas con las luces de estacionamiento.">
          <group id="3060">
             <function start="29" end="29" mask="01000000b" comment="NSW_EIN_AUF_LDS_STL (default: 00 dans certains pays comme les USA)">01</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard: active cornering lights">
+      <code description="Faros antiniebla: luces de curvas activas = cornering lights">
          <group id="3073">
             <function start="218" end="218" mask="00000010b" comment="C_CLC_ENA (default: F020_enable)">F020_enable</function>
             <function start="66" end="66" mask="00000001b" comment="C_BLC_ENA (default: F020_enable)">F020_enable</function>
@@ -324,7 +324,7 @@
             <function start="121" end="121" mask="00111111b" comment="MAPPING_ABBIEGEL_R_OUTPUT (default: nsw_r)">nsw_r</function>
          </group>
       </code> 
-	  <code description="High-Beam Assistant motorway (HBA): activation immédiat dès 120 km/h (défaut: 140 km/h) ou entre 80 km/h et 100 km/h pendant 15 sec (défaut: 90-110 km/h pendant 30 sec)">
+	  <code description="Asistente de luces de carretera (HBA): activación inmediata a partir de 120 km/h (predeterminado: 140 km/h) o entre 80 km/h y 100 km/h durante 15 segundos (predeterminado: 90-110 km/h durante 30 segundos) )">
          <group id="3074">
             <function start="5" end="5" mask="11111111b" comment="C_HBA_HGWY_V_LO (default: 5A - 90 km/h)">50</function>
             <function start="6" end="6" mask="11111111b" comment="C_HBA_HGWY_V_HI (default: 8C - 140 km/h)">82</function>
@@ -332,7 +332,7 @@
             <function start="8" end="8" mask="11111111b" comment="C_HBA_HGWY_T_MIN (default: 1E - 30 sec)">0F</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant motorway (HBA): activation immédiat dès 140 km/h ou entre 90 km/h et 110 km/h pendant 30 sec (défaut">
+	  <code description="Asistente de luces de carretera (HBA): activación inmediata a partir de 140 km/h o entre 90 km/h y 110 km/h durante 30 s (predeterminado">
          <group id="3074">
             <function start="5" end="5" mask="11111111b" comment="C_HBA_HGWY_V_LO (default: 5A - 90 km/h)">5A</function>
             <function start="6" end="6" mask="11111111b" comment="C_HBA_HGWY_V_HI (default: 8C - 140 km/h)">8C</function>
@@ -340,29 +340,29 @@
             <function start="8" end="8" mask="11111111b" comment="C_HBA_HGWY_T_MIN (default: 1E - 30 sec)">1E</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): activation tunel anti-éblouissement dès 50 km/h et désactivation à 45 km/h (defaut: 70-60 km/h)">
+	  <code description="Asistente de luces de carretera (HBA): activación del túnel antideslumbrante a partir de 50 km/h y desactivación a 45 km/h (por defecto: 70-60 km/h)">
          <group id="3074">
             <function start="0" end="0" mask="11111111b" comment="C_HBA_ENA_V_LO (default: 3C - 60 km/h)">2D</function>
             <function start="1" end="1" mask="11111111b" comment="C_HBA_ENA_V_HI (default: 46 - 70 km/h)">32</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): activation tunel anti-éblouissement dès 70 km/h et désactivation à 60 km/h (defaut)">
+	  <code description="Asistente de luces de carretera (HBA): activación del túnel antideslumbrante a partir de 70 km/h y desactivación a 60 km/h (por defecto)">
          <group id="3074">
             <function start="0" end="0" mask="11111111b" comment="C_HBA_ENA_V_LO (default: 3C - 60 km/h)">3C</function>
             <function start="1" end="1" mask="11111111b" comment="C_HBA_ENA_V_HI (default: 46 - 70 km/h)">46</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): activation via le bouton d'éclairage vers la droite (défaut: non)">
+	  <code description="Asistente de luces de carretera (HBA): activación mediante el botón de iluminación a la derecha (predeterminado: no)">
          <group id="3060">
             <function start="22" end="22" mask="11000000b" comment="FLA_AKTIVIERUNG (default: LDS_in_A)">LDS_in_A_oder_2</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): déactivation via le bouton d'éclairage vers la droite (défaut)">
+	  <code description="Asistente de luces de carretera (HBA): desactivación mediante el botón de iluminación a la derecha (por defecto)">
          <group id="3060">
             <function start="22" end="22" mask="11000000b" comment="FLA_AKTIVIERUNG (default: LDS_in_A)">LDS_in_A</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard: désactive cornering lights">
+      <code description="Luces antiniebla: desactiva las luces de curva = cornering lights">
          <group id="3073">
             <function start="218" end="218" mask="00000010b" comment="C_CLC_ENA (default: F020_enable)">F020_disable</function>
             <function start="66" end="66" mask="00000001b" comment="C_BLC_ENA (default: F020_enable)">F020_disable</function>
@@ -376,84 +376,84 @@
             <function start="121" end="121" mask="00111111b" comment="MAPPING_ABBIEGEL_R_OUTPUT (default: nsw_r)">off</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard: permet aux phares anti-brouillard de s'allumer avec la marche arrière">
+      <code description="Luces antiniebla: permite que las luces antiniebla se enciendan con la marcha atrás.">
          <group id="3073">
             <function start="218" end="218" mask="00000100b" comment="C_CLC_REV_ALWAYS_ON (default: 01)">01</function>
             <function start="218" end="218" mask="00010000b" comment="C_CLC_REV_CURV_BOTH_ON (default: 01)">01</function>
          </group>
       </code>
-      <code description="Eclairage d'accueil: Activation de l'éclairage des portes lors de la marche arrière">
+      <code description="Iluminación de bienvenida: activación de la iluminación de la puerta al dar marcha atrás">
          <group id="3070">
             <function start="11" end="11" mask="00010000b" comment="OVT_BEI_RUECKFAHRLICHT (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Eclairage d'accueil: Activation des anti-brouillard">
+      <code description="Iluminación de bienvenida: Activación de faros antiniebla">
          <group id="3063">
             <function start="55" end="55" mask="11000000b" comment="MAPPING_NEBELSCHW_L_PART_OF_WL (default: 00)">01</function>
             <function start="66" end="66" mask="11000000b" comment="MAPPING_NEBELSCHW_R_PART_OF_WL (default: 00)">01</function>
          </group>
       </code>
-      <code description="Eclairage d'accueil: Luminosité des feux de jour à 50% (default 100%)">
+      <code description="Iluminación de bienvenida: Brillo de las luces de circulación diurna al 50% (predeterminado 100%)">
          <group id="3070">
             <function start="14" end="14" mask="11111111b" comment="WL_HELLIGKEIT (default: 64)">32</function>
          </group>
       </code>
-      <code description="Eclairage d'accueil: durée 60s (default: 20s)">
+      <code description="Iluminación de bienvenida: duración 60 s (predeterminado: 20 s)">
          <group id="3060">
             <function start="15" end="15" mask="11111111b" comment="WL_TIMEOUT (default: 14)">3C</function>
          </group>
       </code>
-      <code description="Eclairage: Sensibilité du capteur éclairage automatique (moins sensible)">
+      <code description="Iluminación: Sensibilidad automática del sensor de iluminación (menos sensible)">
          <group id="3130">
             <function start="5" end="5" mask="00000111b" comment="RLS_DEF_FLC_SCHWELLWERT_SATZ (default: 00)">03</function>
          </group>
       </code>
-      <code description="Eclairage pas de porte (FollowMeHome Step 1 sur 2 - voir HU-NBT) - 4èime bouton ou clic rapide sur le 3ième (default: non actif)">
+      <code description="Iluminación de puerta (Sígueme en casa, paso 1 de 2; consulte HU-NBT): cuarto botón o clic rápido en el tercero (predeterminado: no activo)">
          <group id="3060">
             <function start="14" end="14" mask="00000010b" comment="FOLLOWMEHOME_VIA_FFB (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Eclairage pas de porte (FollowMeHome): durée d'éclairage 30s (default: 20s)">
+      <code description="Iluminación de puerta (Sígueme a casa): duración de la iluminación 30 s (predeterminado: 20 s)">
          <group id="3064">
             <function start="216" end="216" mask="11111111b" comment="PIA_DEFAULT_FMH (default: 14)">1E</function>
          </group>
       </code>
-      <code description="Lumière d'ambiance: activation à l'ouverture">
+      <code description="Luz ambiental: activación al abrir">
          <group id="3070">
             <function start="1" end="1" mask="10000000b" comment="WELCOME_AMBIENTE (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Lumière d'ambiance: durée 60s après dévérouillage des portes (par default: 20s)">
+      <code description="Luz ambiental: duración 60 s después de desbloquear las puertas (predeterminado: 20 s)">
          <group id="3070">
             <function start="9" end="9" mask="00011111b" comment="IB_EINSCHALT_BEGR_ULOK (default: 14)">3C</function>
          </group>
       </code>
-      <code description="Lumière d'ambiance: durée 20s après vérouillage des portes (par default: 8s)">
+      <code description="Luz ambiental: duración 20 s después de bloquear las puertas (predeterminado: 8 s)">
          <group id="3070">
             <function start="10" end="10" mask="00011111b" comment="IB_EINSCHALT_BEGR_LOK (default: 08)">14</function>
          </group>
       </code>
-      <code description="Séparation du réglage de luminosité entre instrumentation et ambiance">
+      <code description="Separación del ajuste de brillo entre instrumentación y ambiente.">
          <group id="3070">
             <function start="4" end="4" mask="10000000b" comment="AMBIENTE_NACHFUEHRUNG (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Feux freinage d'urgence: activation mode clignotement">
+      <code description="Luces de freno de emergencia: activación modo intermitente">
          <group id="3060">
             <function start="16" end="16" mask="00000011b" comment="ESS_AKTIVIERBARER_AUSGANG (default: bremslicht_blinkend)">bremslicht_blinkend</function>
          </group>
       </code>
-      <code description="Feux freinage d'urgence: décéleration minimum à 3m/s (par default: 7m/s)">
+      <code description="Luces de freno de emergencia: desaceleración mínima a 3 m/s (por defecto: 7 m/s)">
          <group id="3060">
             <function start="20" end="20" mask="00011111b" comment="ESS_AKTIVIERUNG_REALE_VERZ (default: 0E)">06</function>
          </group>
       </code>
-      <code description="Feux freinage d'urgence: vitesse minimale supérieur à 20km/h (default: 50km/h)">
+      <code description="Luces de freno de emergencia: velocidad mínima superior a 20 km/h (por defecto: 50 km/h)">
          <group id="3060">
             <function start="17" end="17" mask="11111110b" comment="ESS_AKTIVIERUNG_GESCHW (default: 32)">14</function>
          </group>
       </code>
-      <code description="Auto Start/Stop: Désactive Auto Start/Stop par default">
+      <code description="Auto Start/Stop: Desactiva el Start/Stop Auto de forma predeterminada">
          <group id="3023">
             <function start="0" end="0" mask="00010000b" comment="TCM_MSA_DEFAULT_OFF (default: nicht_aktiv)">aktiv</function>
          </group>
@@ -463,27 +463,27 @@
             <function start="0" end="0" mask="10000000b" comment="TCM_MSA_ECO_MODE (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Auto Start/Stop: Mémorise la dernière position Auto Start/Stop (après redémarrage)">
+      <code description="Auto Start/Stop: Memoriza la última posición de Auto Start/Stop (después del reinicio)">
          <group id="3023">
             <function start="0" end="0" mask="00100000b" comment="TCM_MSA_MEMORY (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Double coup de Klaxon au vérouillage des portes moteur allumé">
+      <code description="Doble toque de bocina al cerrar las puertas con el motor encendido">
          <group id="3040">
             <function start="1" end="1" mask="00100000b" comment="CLM_HORN_AT_SECURE (default: aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Désactivation de la radio / navigation à l'ouverture de la porte conducteur (default: désactivé)">
+      <code description="Desactivación de la radio/navegación al abrir la puerta del conductor (predeterminado: desactivado)">
          <group id="3020">
             <function start="1" end="1" mask="00000001b" comment="TCM_LOGIC_R_OFF_DOOR (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Activation de la radio / navigation à l'ouverture de la porte conducteur (default: désactivé)">
+      <code description="Activación de la radio/navegación al abrir la puerta del conductor (por defecto: deshabilitado)">
          <group id="3020">
             <function start="1" end="1" mask="00000001b" comment="TCM_LOGIC_R_OFF_DOOR (default: nicht_aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Moteur: Démarrage du moteur sans presser la pédalle de frein (boite automatique)">
+      <code description="Motor: Arrancar el motor sin pisar el pedal del freno (caja de cambios automática)">
          <group id="3020">
             <function start="0" end="0" mask="00000001b" comment="TCM_STARTLOCK_BRAKE (default: aktiv)">nicht_aktiv</function>
             <function start="0" end="0" mask="00010000b" comment="TCM_STARTLOCK_DRIVINGREADINESS (default: aktiv)">nicht_aktiv</function>
@@ -491,132 +491,132 @@
       </code>
    </cafd>
    <cafd id="00000A07" name="FZD__07" author="Botho (public)" series="F020,F030">
-      <code description="Acoustical lock/unlock confirmation Buzzer level low (level 2 - default)">
+      <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 2 - predeterminado)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_2</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level low (level 3)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 3)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_3</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level low (level 4)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 4)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_4</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation Buzzer level low (level 5)">
+      <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 5)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_5</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level low (level 6)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 6)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_6</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation Buzzer level low (level 7)">
+      <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 7)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_7</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level low (level 8)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 8)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_8</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level low (level 9)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 9)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_9</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation Buzzer level low (level 10)">
+      <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador bajo (nivel 10)">
          <group id="3001">
             <function start="33" end="33" mask="11111111b" comment="Buzzer level low (default: level_2)">level_10</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation Buzzer level high (level 2)">
+      <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 2)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_2</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level high (level 3 - default)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 3 - predeterminado)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_3</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level high (level 4)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 4)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_4</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation Buzzer level high (level 5)">
+      <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 5)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_5</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level high (level 6)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 6)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_6</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation Buzzer level high (level 7)">
+      <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 7)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_7</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level high (level 8)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 8)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_8</function>
          </group>
       </code>
-	  <code description="Acoustical lock/unlock confirmation Buzzer level high (level 9)">
+	  <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 9)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_9</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation Buzzer level high (level 10)">
+      <code description="Confirmación acústica de bloqueo/desbloqueo Nivel de zumbador alto (nivel 10)">
          <group id="3001">
             <function start="34" end="34" mask="11111111b" comment="Buzzer level high (default: level_3)">level_10</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation sound frequency (Low)">
+      <code description="Frecuencia de sonido de confirmación de bloqueo / desbloqueo acústico (bajo)">
          <group id="3001">
             <function start="35" end="35" mask="11111111b" comment="Buzzer frequency (default: 8F)">8F</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation sound frequency (Normal - Default)">
+      <code description="Frecuencia del sonido de confirmación de bloqueo/desbloqueo acústico (Normal - Predeterminado)">
          <group id="3001">
             <function start="35" end="35" mask="11111111b" comment="Buzzer frequency (default: 8F)">8F</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation sound frequency (High)">
+      <code description="Frecuencia acústica del sonido de confirmación de bloqueo/desbloqueo (Alta)">
          <group id="3001">
             <function start="35" end="35" mask="11111111b" comment="Buzzer frequency (default: 8F)">8F</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation sound duration (Short)">
+      <code description="Duración del sonido de confirmación acústica de bloqueo/desbloqueo (corto)">
          <group id="3001">
             <function start="36" end="36" mask="11111111b" comment="Buzzer duration (default: 0A)">05</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation sound duration (Normal - Default)">
+      <code description="Duración del sonido acústico de confirmación de bloqueo/desbloqueo (Normal - Predeterminado)">
          <group id="3001">
             <function start="36" end="36" mask="11111111b" comment="Buzzer duration (default: 0A)">0A</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation sound duration (Long)">
+      <code description="Duración del sonido de confirmación de bloqueo / desbloqueo acústico (largo)">
          <group id="3001">
             <function start="36" end="36" mask="11111111b" comment="Buzzer duration (default: 0A)">0F</function>
          </group>
       </code>
-      <code description="Acoustical lock/unlock confirmation sound duration (Very Long)">
+      <code description="Duración del sonido de confirmación acústica de bloqueo/desbloqueo (muy larga)">
          <group id="3001">
             <function start="36" end="36" mask="11111111b" comment="Buzzer duration (default: 0A)">14</function>
          </group>
       </code>
-      <code description="Alarm type Europe (Default)">
+      <code description="Tipo de alarma Europa (predeterminado)">
          <group id="3001">
             <function start="17" end="17" mask="11111111b" comment="Alarm type Europe (default: ece)">ece</function>
          </group>
@@ -631,128 +631,128 @@
             <function start="17" end="17" mask="11111111b" comment="Alarm type US (default: ece)">08</function>
          </group>
       </code>
-	  <code description="Alarm Arming delay time (30 sec - Default)">
+	  <code description="Tiempo de retardo de armado de alarma (30 segundos - predeterminado)">
          <group id="3001">
             <function start="15" end="15" mask="11111111b" comment="Arming time (default: 30s)">3C</function>
          </group>
       </code>
-	  <code description="Alarm Arming delay time (60 sec)">
+	  <code description="Tiempo de retardo de armado de alarma (60 segundos)">
          <group id="3001">
             <function start="15" end="15" mask="11111111b" comment="Arming time (default: 30s)">78</function>
          </group>
       </code>
-      <code description="Panic Alarm - Active">
+      <code description="Alarma de pánico - Activa">
          <group id="3002">
             <function start="0" end="0" mask="00000100b" comment="Panikalarm (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Panic Alarm - Not active">
+      <code description="Alarma de pánico - No activa">
          <group id="3002">
             <function start="0" end="0" mask="00000100b" comment="Panikalarm (default: nicht_aktiv)">nicht_aktiv</function>
          </group>
       </code>
-	  <code description="Alarm: delay to disable volumetric sensor after arming - normal (10s - Default)">
+	  <code description="Alarma: retraso para desactivar el sensor volumétrico después del armado - normal (10 s - predeterminado)">
          <group id="3002">
             <function start="2" end="2" mask="00001111b" comment="Zeitfenster Deaktivierung NG-US (default: 0A)">0A</function>
          </group>
       </code>
-	  <code description="Alarm: delay to disable volumetric sensor after arming - long (20s)">
+	  <code description="Alarma: retraso para desactivar el sensor volumétrico después del armado - largo (20 s)">
          <group id="3002">
             <function start="2" end="2" mask="00001111b" comment="Zeitfenster Deaktivierung NG-US (default: 0A)">14</function>
          </group>
       </code>
-	  <code description="Alarm: Disable Acoustic acknowledgment when arming, regardless of door status (Default)">
+	  <code description="Alarma: deshabilita el reconocimiento acústico al armar, independientemente del estado de la puerta (predeterminado)">
          <group id="3002">
             <function start="7" end="7" mask="00000001b" comment="Akustische Quittierung Schaerfen (default: 00)">00</function>
          </group>
       </code>
-	  <code description="Alarm: Enable Acoustic acknowledgment when arming, regardless of door status)">
+	  <code description="Alarma: Habilita el reconocimiento acústico al armar, independientemente del estado de la puerta)">
          <group id="3002">
             <function start="7" end="7" mask="00000001b" comment="Akustische Quittierung Schaerfen (default: 00)">01</function>
          </group>
       </code>
    </cafd>
    <cafd id="0000067B" name="ICMQL" author="Botho (public)" series="F020,F030">
-      <code description="Active Cruise Control default distance (Level 1 - la plus faible)">
+      <code description="Distancia predeterminada del control de crucero activo (Nivel 1 - más bajo)">
          <group id="3000">
             <function start="184" end="184" mask="00000111b" comment="C_Abstandsstufe_init (default: 03)">01</function>
          </group>
       </code>
-      <code description="Active Cruise Control default distance (Level 2)">
+      <code description="Distancia predeterminada del Control de crucero activo (Nivel 2)">
          <group id="3000">
             <function start="184" end="184" mask="00000111b" comment="C_Abstandsstufe_init (default: 03)">02</function>
          </group>
       </code>
-      <code description="Active Cruise Control default distance (Level 3 - Default)">
+      <code description="Distancia predeterminada del control de crucero activo (Nivel 3 - Predeterminado)">
          <group id="3000">
             <function start="184" end="184" mask="00000111b" comment="C_Abstandsstufe_init (default: 03)">03</function>
          </group>
       </code>
-      <code description="Active Cruise Control default distance (Level 4)">
+      <code description="Distancia predeterminada del Control de crucero activo (Nivel 4)">
          <group id="3000">
             <function start="184" end="184" mask="00000111b" comment="C_Abstandsstufe_init (default: 03)">04</function>
          </group>
       </code>
-      <code description="Active Cruise Control: Enable from 10 km/h (30 km/h ou 20 mph par default)">
+      <code description="Control de crucero activo: activar desde 10 km/h (30 km/h o 20 mph por defecto)">
          <group id="3000">
             <function start="142" end="142" mask="11111111b" comment="C_Wunschgeschw_min_kmh (default: 1E)">0A</function>
             <function start="143" end="143" mask="11111111b" comment="C_Wunschgeschw_min_mph (default: 14)">06</function>
          </group>
       </code>
-	  <code description="Active Cruise Control: Enable from 30 km/h (Default)">
+	  <code description="Control de crucero activo: habilitar desde 30 km/h (predeterminado)">
          <group id="3000">
             <function start="142" end="142" mask="11111111b" comment="C_Wunschgeschw_min_kmh (default: 1E)">1E</function>
             <function start="143" end="143" mask="11111111b" comment="C_Wunschgeschw_min_mph (default: 14)">14</function>
          </group>
       </code>
-      <code description="Mode de conduite: Enable default ECO PRO when startup">
+      <code description="Modo de conducto: habilite ECO PRO predeterminado al iniciar">
          <group id="3000">
             <function start="36" end="36" mask="00001000b" comment="IcmKod_B_InitEco (default: 00)">01</function>
          </group>
       </code>
-      <code description="Mode de conduite: Enable default CONFORT when startup (Default)">
+      <code description="Modo de conducción: Habilite CONFORT predeterminado al iniciar (Predeterminado)">
          <group id="3000">
             <function start="36" end="36" mask="00001000b" comment="IcmKod_B_InitEco (default: 00)">00</function>
          </group>
       </code>
-      <code description="Blindspot detection: Enable from 10km/h">
+      <code description="Detección de punto ciego: habilitar desde 10 km/h">
          <group id="3000">
             <function start="190" end="190" mask="00111111b" comment="C_ZSW_Aktivierunggeschwindigkeit_Funktion_low (default: 01)">00</function>
          </group>
       </code>
-      <code description="Blindspot detection: Enable from 20km/h (Default)">
+      <code description="Detección de punto ciego: habilitar desde 20 km/h (predeterminado)">
          <group id="3000">
             <function start="190" end="190" mask="00111111b" comment="C_ZSW_Aktivierunggeschwindigkeit_Funktion_low (default: 01)">01</function>
          </group>
       </code>
-      <code description="Blindspot detection: Enable from 30km/h">
+      <code description="Detección de punto ciego: Habilitar desde 30 km/h">
          <group id="3000">
             <function start="190" end="190" mask="00111111b" comment="C_ZSW_Aktivierunggeschwindigkeit_Funktion_low (default: 01)">02</function>
          </group>
       </code>
-      <code description="Blindspot detection: Enable from 50km/h">
+      <code description="Detección de punto ciego: Habilitar desde 50 km/h">
          <group id="3000">
             <function start="190" end="190" mask="00111111b" comment="C_ZSW_Aktivierunggeschwindigkeit_Funktion_low (default: 01)">03</function>
          </group>
       </code>
    </cafd>
    <cafd id="000016EE" name="IHKA_VA02" author="Botho (public)" series="F020,F030">
-      <code description="Climatisation: Mémorise la dernière position (on/off)">
+      <code description="Aire acondicionado: Memoriza la última posición (encendido/apagado)">
          <group id="3003">
             <function start="0" end="0" mask="00000010b" comment="MEMORY_OFF (default: aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Climatisation: Mémorise la dernière position du flux d'air (default ; 15 minutes après arrêt du moteur)">
+      <code description="Aire acondicionado: Memoriza la última posición del flujo de aire (predeterminado; 15 minutos después de detener el motor)">
          <group id="3003">
             <function start="0" end="0" mask="00000001b" comment="MEMORY_UMLUFT (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Climatisation: AC off en mode AUTO">
+      <code description="Aire acondicionado: AC apagado en modo AUTO">
          <group id="3003">
             <function start="0" end="0" mask="00000100b" comment="AC_ON_WITH_AUTO (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Climatisation: Désactive la remise en route automatique du recyclage du flux d'air (HO-Words: DAUE)">
+      <code description="Aire acondicionado: Desactiva el reinicio automático del reciclaje del flujo de aire (palabras HO:wor = DAUE)">
          <group id="3003">
             <function start="1" end="1" mask="00010000b" comment="AC_ON_WITH_RECIRC (default: nicht_aktiv)">aktiv</function>
             <function start="0" end="0" mask="10000000b" comment="UMLUFT_AUTO_AUS (default: aktiv)">nicht_aktiv</function>
@@ -760,47 +760,47 @@
       </code>
    </cafd>
    <cafd id="00001148" name="KAFAS2" author="Botho (public)" series="F020,F030">
-      <code description="HUD: Affichage de l'assistant de distance (Step 3 sur 3 - voir KOMBI et HU_NBT - nécessite Active Cruise Control)">
+      <code description="HUD: Pantalla de asistente de distancia (Paso 3 de 3; consulte KOMBI y HU_NBT; requiere control de crucero activo)">
          <group id="3060">
             <function start="1" end="1" mask="00011000b" comment="DISPLAY_HEADWAY_DISTANCE (default: 00)">01</function>
             <function start="1" end="1" mask="00000010b" comment="SEND_STATUS_IBRAKE (default: 00)">01</function>
             <function start="1" end="1" mask="00000100b" comment="SEND_PARAM_IBRAKE (default: 01)">01</function>
          </group>
       </code>
-      <code description="Avertisseur de franchissement de ligne: activation de la détection du bord de la route sans marquage">
+      <code description="Aviso de salida de carril: activación de la detección de borde de carretera sin señalización">
          <group id="3020">
             <function start="2" end="2" mask="00000011b" comment="ROAD_EDGE_WARNING_ENABLED (defaut: 02)">detection_for_grass_edge_and_curb_stone</function>
          </group>
       </code>
-      <code description="Avertisseur de franchissement de ligne: activation à partir de 55 km/h (default: 70 km/h) et désactivation en dessous de 50 km/h (default: 65 km/h)">
+      <code description="Aviso de cambio de carril: activación a partir de 55 km/h (por defecto: 70 km/h) y desactivación por debajo de 50 km/h (por defecto: 65 km/h)">
          <group id="3020">
             <function start="3" end="3" mask="11111111b" comment="THRV_AVAI_TLC_HIGH (default: 46)">37</function>
             <function start="4" end="4" mask="11111111b" comment="THRV_AVAI_TLC_LOW (default: 41)">32</function>
          </group>
       </code>	  
-	  <code description="-- Don't work -- High-Beam Assistant (HBA): activation du réglage de la sensibilité (default: no_sensitivity_change)">
+	  <code description="-- No funciona: Asistente de luces altas (HBA): habilita el ajuste de sensibilidad (predeterminado: no_sensitivity_change)">
          <group id="3050">
             <function start="1" end="1" mask="00010000b" comment="ALLOW_SENS_CHANGE (default: 00)">01</function>
          </group>
       </code>
-	  <code description="-- Don't work -- High-Beam Assistant (HBA): désactivation du réglage de la sensibilité (default)">
+	  <code description="-- No funciona: Asistente de luces altas (HBA): desactiva el ajuste de sensibilidad (predeterminado)">
          <group id="3050">
             <function start="1" end="1" mask="00010000b" comment="ALLOW_SENS_CHANGE (default: 00)">00</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): activation dès 30 km/h et désactivation à 25 km/h (default: 40-30 km/h)">
+	  <code description="Asistente de luces de carretera (HBA): activación a partir de 30 km/h y desactivación a 25 km/h (por defecto: 40-30 km/h)">
          <group id="3050">
             <function start="6" end="6" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_ON (default: 28)">1E</function>
             <function start="7" end="7" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_OFF (default: 1E)">19</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): activation dès 40 km/h et désactivation à 30 km/h (default)">
+	  <code description="Asistente de luces de carretera (HBA): activación a partir de 40 km/h y desactivación a 30 km/h (por defecto)">
          <group id="3050">
             <function start="6" end="6" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_ON (default: 28)">28</function>
             <function start="7" end="7" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_OFF (default: 1E)">1E</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): ajustement des délais de réaction du tunel anti-éblouissement plus rapide">
+	  <code description="Asistente de luces altas (HBA): ajusta los tiempos de reacción del túnel antideslumbrante más rápido">
          <group id="3050">
             <function start="8" end="8" mask="11111111b" comment="DELAY_AFTER_ONCOMING (default: 06 - 6 sec)">03</function>
             <function start="10" end="10" mask="11111111b" comment="ONCOMING_HIGH_SPEED_DELAY (default: 0F - 15 sec)">04</function>
@@ -808,7 +808,7 @@
             <function start="12" end="12" mask="11111111b" comment="DELAY_AFTER_SLOW_OVERTAKING (default: 50 - 80 sec)">14</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): ajustement des délais de réaction du tunel anti-éblouissement (defaut)">
+	  <code description="Asistente de luces de carretera (HBA): ajuste de los tiempos de reacción del túnel antideslumbrante (por defecto)">
          <group id="3050">
             <function start="8" end="8" mask="11111111b" comment="DELAY_AFTER_ONCOMING (default: 06 - 6 sec)">06</function>
             <function start="10" end="10" mask="11111111b" comment="ONCOMING_HIGH_SPEED_DELAY (default: 0F - 15 sec)">0F</function>
@@ -816,78 +816,78 @@
             <function start="12" end="12" mask="11111111b" comment="DELAY_AFTER_SLOW_OVERTAKING (default: 50 - 80 sec)">50</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): seuil d'activation en ville à 75 km/h (défaut : 85 km/h)">
+	  <code description="Asistente de luces de carretera (HBA): umbral de activación en ciudad a 75 km/h (por defecto: 85 km/h)">
          <group id="3050">
             <function start="24" end="24" mask="11111111b" comment="HIGH_SPEED_SWITCHING_HIGH_BEAMS (default: 55 - 85 km/h)">4B</function>
          </group>
       </code>
-	  <code description="High-Beam Assistant (HBA): seuil d'activation en ville à 85 km/h (défaut)">
+	  <code description="Asistente de luces de carretera (HBA): umbral de activación en ciudad a 85 km/h (por defecto)">
          <group id="3050">
             <function start="24" end="24" mask="11111111b" comment="HIGH_SPEED_SWITCHING_HIGH_BEAMS (default: 55- 85 km/h)">55</function>
          </group>
       </code>
    </cafd>
    <cafd id="000007C8" name="HKFM" author="Botho (public)" series="F020,F030">
-      <code description="Hayon: Activation fermeture via bouton au tableau de bord">
+      <code description="Portón trasero: Activación de cierre mediante botón en el salpicadero">
          <group id="3010">
             <function start="2" end="2" mask="00001000b" comment="SCH_FBD (default: aktiv)">aktiv</function>
             <function start="2" end="2" mask="00000100b" comment="SCH_TOEHKI (default: nicht_aktiv)">aktiv</function>
             <function start="0" end="0" mask="00001000b" comment="TASTER_FBD (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Hayon: Vitesse d'ouverture (rapide avec freinage avant la butée - les segments vont du bas vers le haut)">
+      <code description="Portón trasero: velocidad de apertura (rápido con frenado antes de la parada - los segmentos van de abajo hacia arriba)">
          <group id="3020">
             <function start="2" end="10" mask="11111111b" comment="DREHZAL_SEGMENT_OEFF (default: 1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B)">1B, 1B, 26, 26, 26, 26, 26, 1B, 13</function>
             <function start="21" end="21" mask="11111111b" comment="DEFAULT_DREHZ_OEF (default: 1B)">1B</function>
          </group>
       </code>
-      <code description="Hayon: Vitesse d'ouverture (par default)">
+      <code description="Portón trasero: velocidad de apertura (predeterminado)">
          <group id="3020">
             <function start="2" end="10" mask="11111111b" comment="DREHZAL_SEGMENT_OEFF (default: 1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B)">1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B</function>
             <function start="21" end="21" mask="11111111b" comment="DEFAULT_DREHZ_OEF (default: 1B)">1B</function>
          </group>
       </code>
-      <code description="Hayon: Vitesse de fermeture (rapide avec freinage à la fermeture - les segments vont du bas vers le haut))">
+      <code description="Portón trasero: velocidad de cierre (rápido con frenado al cerrar - los segmentos van de abajo hacia arriba))">
          <group id="3020">
             <function start="11" end="19" mask="11111111b" comment="DREHZAL_SEGMENT_SCHL (default: 13, 1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B)">0A, 13, 26, 26, 26, 26, 26, 1E, 1B</function>
             <function start="20" end="20" mask="11111111b" comment="DEFAULT_DREHZ_SCHL (default: 1B)">1B</function>
          </group>
       </code>
-      <code description="Hayon: Vitesse de fermeture (par default)">
+      <code description="Portón trasero: velocidad de cierre (predeterminado)">
          <group id="3020">
             <function start="11" end="19" mask="11111111b" comment="DREHZAL_SEGMENT_SCHL (default: 13, 1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B)">13, 1B, 1B, 1B, 1B, 1B, 1B, 1B, 1B</function>
             <function start="20" end="20" mask="11111111b" comment="DEFAULT_DREHZ_SCHL (default: 1B)">1B</function>
          </group>
       </code>
-      <code description="Hayon: Activation fermeture sur pression de la main (exercer une pression pour fermer au moins 5% du hayon en moins de 2s)">
+      <code description="Portón trasero: Activación de cierre mediante presión manual (ejercer presión para cerrar al menos el 5% del portón trasero en menos de 2 segundos)">
          <group id="3010">
             <function start="2" end="2" mask="00000010b" comment="MECH_DRUK_AUTO_SCH (default: nicht_aktiv)">aktiv</function>
             <function start="4" end="4" mask="11111111b" comment="MECH_DRUCK_AUTO_ZEIT (default: 0A) - Duréee x 100ms de la pression à exercer">14</function>
             <function start="5" end="5" mask="11111111b" comment="MECH_DRUCK_AUTO_WINKEL (default: 02) - Angle x 5% minimum pour enclecncher la fermeture automatique">01</function>
          </group>
       </code>
-      <code description="Hayon: Désactivation fermeture sur pression de la main (par default)">
+      <code description="Portón trasero: Desactivación del cierre al presionar con la mano (por defecto)">
          <group id="3010">
             <function start="2" end="2" mask="00000010b" comment="MECH_DRUK_AUTO_SCH (default: nicht_aktiv)">nicht_aktiv</function>
             <function start="4" end="4" mask="11111111b" comment="MECH_DRUCK_AUTO_ZEIT (default: 0A) - Duréee x 100ms de la pression à exercer">0A</function>
             <function start="5" end="5" mask="11111111b" comment="MECH_DRUCK_AUTO_WINKEL (default: 02) - Angle x 5% minimum pour enclecncher la fermeture automatique">02</function>
          </group>
       </code>
-      <code description="Hayon: Activation ouverture sur pression de la main (exercer une pression pour ouvrir au moins 5% du hayon en moins de 2s)">
+      <code description="Portón trasero: Activación de la apertura mediante presión manual (ejercer presión para abrir al menos el 5% del portón trasero en menos de 2 segundos)">
          <group id="3010">
             <function start="2" end="2" mask="00000001b" comment="MECH_DRUCK_AUTO_OEF (default: nicht_aktiv)">aktiv</function>
             <function start="4" end="4" mask="11111111b" comment="MECH_DRUCK_AUTO_ZEIT (default: 0A) - Duréee x 100ms de la pression à exercer">14</function>
             <function start="5" end="5" mask="11111111b" comment="MECH_DRUCK_AUTO_WINKEL (default: 02) - Angle x 5% minimum pour enclecncher la fermeture automatique">01</function>
          </group>
       </code>
-      <code description="Hayon: Désactivation ouverture sur pression de la main (par default)">
+      <code description="Portón trasero: Desactivación de la apertura al presionar con la mano (por defecto)">
          <group id="3010">
             <function start="2" end="2" mask="00000001b" comment="MECH_DRUCK_AUTO_OEF (default: nicht_aktiv)">nicht_aktiv</function>
             <function start="4" end="4" mask="11111111b" comment="MECH_DRUCK_AUTO_ZEIT (default: 0A) - Duréee x 100ms de la pression à exercer">0A</function>
             <function start="5" end="5" mask="11111111b" comment="MECH_DRUCK_AUTO_WINKEL (default: 02) - Angle x 5% minimum pour enclecncher la fermeture automatique">02</function>
          </group>
       </code>
-      <code description="Hayon: Activation Smart Closing (Step 2 sur 2 - voir FEM_BODY) activé par default si production date 0315 et après">
+      <code description="Portón trasero: Activación de cierre inteligente (Paso 2 de 2 - ver FEM_BODY) activada de forma predeterminada si la fecha de producción es 0315 y posterior">
          <group id="3120">
             <function start="0" end="0" mask="00100000b" comment="FUNC_SMO (default: 00)">wert_F31</function>
             <function start="0" end="0" mask="01000000b" comment="FUNC_BUZZER_SMO (default: 00)">wert_F31</function>
@@ -895,27 +895,27 @@
       </code>
    </cafd>
    <cafd id="00000DED" name="HU_NBT" author="Botho (public)" series="F020,F030">
-      <code description="Média: volume au démarrage à 25% (valeur par default)">
+      <code description="Média: volumen de inicio al 25% (valor predeterminado)">
          <group id="3002">
             <function start="3" end="3" mask="11111111b" comment="VOL_MAX_ON (default: 19)">19</function>
          </group>
       </code>
-      <code description="Média: volume au démarrage à 30% (default 25%)">
+      <code description="Média: volumen de inicio al 30% (predeterminado 25%)">
          <group id="3002">
             <function start="3" end="3" mask="11111111b" comment="VOL_MAX_ON (default: 19)">1E</function>
          </group>
       </code>
-      <code description="Média: volume au démarrage à 40% (default 25%)">
+      <code description="Média: volumen de inicio al 40% (predeterminado 25%)">
          <group id="3002">
             <function start="3" end="3" mask="11111111b" comment="VOL_MAX_ON (default: 19)">28</function>
          </group>
       </code>
-      <code description="Média: Montrer la piste suivante pour la musique (KOMBI_LOW only)">
+      <code description="Média: Mostrar la siguiente pista de música (solo KOMBI_LOW)">
          <group id="3000">
             <function start="110" end="110" mask="00100000b" comment="BASIS_KOMBI_MMI_LIST (fonctionne que si KOMBI_CIC=kombi_low) (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Média: Activation lecture OGG, XVID, XVCD et USB">
+      <code description="Média: Activation Codex OGG, XVID, XVCD en USB">
          <group id="3000">
             <function start="15" end="15" mask="00010000b" comment="ENT_CODEC_OGG (default: nicht_aktiv)">aktiv</function>
             <function start="15" end="15" mask="00100000b" comment="ENT_CODEC_XVID (default: nicht_aktiv)">aktiv</function>
@@ -923,7 +923,7 @@
             <function start="13" end="13" mask="00000100b" comment="ENT_MC_VIDEO_SUPPORT (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Média: Activation DVD in motion">
+      <code description="Média: activación video en movimiento">
          <group id="3000">
             <function start="72" end="72" mask="11111111b" comment="SPEEDLOCK_X_KMH_MAX (default: 03)">FF</function>
             <function start="71" end="71" mask="11111111b" comment="SPEEDLOCK_X_KMH_MIN (default: 03)">FF</function>
@@ -932,54 +932,54 @@
             <function start="57" end="57" mask="00000111b" comment="VIDEO_SPEEDLOCK_CONDITION (default: none)">none</function>
          </group>
       </code>
-      <code description="Média: couverture album Gracenote dB Full-Size">
+      <code description="Média: álbum de cobertura Gracenote dB Full-Size">
          <group id="3000">
             <function start="14" end="14" comment="ENT_MC_COVER_SCALE (default: nicht_aktiv)" mask="00100000b">aktiv</function>
          </group>
       </code>
-      <code description="Média: Active les bookmarks dans la collection de musique">
+      <code description="Média: Habilita marcadores en la colección de música.">
          <group id="3000">
             <function start="14" end="14" comment="ENT_MC_SONG_BOOKMARKS (default: nicht_aktiv)" mask="00000100b">aktiv</function>
          </group>
       </code>
-      <code description="HUD: Affichage de l'assistant de distance (Step 2 sur 3 - voir KOMBI et KAFAS2 - nécessite Active Cruise Control)">
+      <code description="HUD: Pantalla del asistente de distancia (Paso 2 de 3; consulte KOMBI y KAFAS2; requiere control de crucero activo)">
          <group id="3000">
             <function start="97" end="97" mask="00001000b" comment="HUD_DISTANCE_INFO (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="HUD: Délai d'affichage 2,5s informations multimédia dans le HUD (default 4s)">
+      <code description="HUD: Demora de visualización de información multimedia de 2,5 s en el HUD (4 s predeterminado)">
          <group id="3000">
             <function start="106" end="106" mask="00000111b" comment="DISPLAYTIME_LIST_HUD_KOMBI (default: 05)">03</function>
          </group>
       </code>
-      <code description="HUD: Affichage de l'option Sport (indicateur de changement rapports - seulement pour véhicule M)">
+      <code description="HUD: Visualización de la opción Sport (indicador de cambio de marcha - sólo para vehículos M)">
          <group id="3000">
             <function start="18" end="18" mask="00000001b" comment="HUD_SPORTANZEIGE_ENABLE (default: nicht_aktiv)">aktiv</function>
             <function start="18" end="18" mask="00000100b" comment="HUD_SPORTANZEIGE_MS_GASSE_ENABLE (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Doors: Checkbox acoustical lock confirmation">
+      <code description="Puertas: Casilla de confirmación de bloqueo acústico">
          <group id="3000">
             <function start="110" end="110" mask="00000001b" comment="ACOUSTICAL_LOCK_CONFIRM (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Eclairage: Ajout feux de jour (Step 2 sur 3 - voir FEM_BODY et REM)">
+      <code description="Iluminación: adición de luces de circulación diurna (Paso 2 de 3; consulte FEM_BODY y REM)">
          <group id="3000">
             <function start="92" end="92" mask="00011000b" comment="DAYDRIVING_LIGHT (default: 00)">02</function>
          </group>
       </code>
-      <code description="Statut: Affichage température et pression des pneus">
+      <code description="Estado: visualización de la temperatura y presión de los neumáticos">
          <group id="3001">
             <function start="1" end="1" mask="00100000b" comment="RDC_SAFETY (default: nicht_aktiv)">aktiv</function>
             <function start="66" end="66" mask="00001100b" comment="RDC_DRUCK_TEMP (default: 01/druck)">02</function>
          </group>
       </code>
-      <code description="Statut: Affichage du carnet d'entretien">
+      <code description="Estado: viendo el registro de servicio">
          <group id="3000">
             <function start="2" end="2" mask="00100000b" comment="SERVICE_HISTORY (default: aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Notice: Utilisation de la notice et jumelage BT en roulant">
+      <code description="Instrucciones: uso de las instrucciones y emparejamiento BT mientras conduce">
          <group id="3000">
             <function start="0" end="0" mask="00100000b" comment="SL06_IBA_1 (default: aktiv)">nicht_aktiv</function>
             <function start="0" end="0" mask="01000000b" comment="SL07_IBA_2 (default: nicht_aktiv)">nicht_aktiv</function>
@@ -987,7 +987,7 @@
             <function start="1" end="1" mask="10000000b" comment="SL16_ADD_CEDEVICE (default: nicht_aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Messages: Affichage des SMS, BMW Info, My Info and AKD en entier (default: 3 lignes)">
+      <code description="Mensajes: visualización completa de SMS, información de BMW, mi información y AKD (predeterminado: 3 líneas)">
          <group id="3000">
             <function start="34" end="34" mask="00011100b" comment="MYINFO_DRIVING_TEXT_LENGTH (default: whole_text)">whole_text</function>
             <function start="34" end="34" mask="11100000b" comment="AKD_DRIVING_TEXT_LENGTH (default: whole_text)">whole_text</function>
@@ -998,17 +998,17 @@
             <function start="11" end="11" mask="00000111b" comment="PIM_DRIVING_TEXT_LENGTH (default: 01)">07</function>
          </group>
       </code>
-      <code description="Sport: Affichage mode M Sport (Rouge et Argent)">
+      <code description="Deporte: Pantalla del modo M Sport (rojo y plateado)">
          <group id="3000">
             <function start="133" end="133" mask="01000000b" comment="M_VEHICLE (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Alerte quand proche du POI">
+      <code description="Navegación: alerta cuando esté cerca de un punto de interés">
          <group id="3000">
             <function start="111" end="111" mask="10000000b" comment="NAVI_ALERT_POI (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Ajoute prévisualisation de la route dans les options">
+      <code description="Navegación: agregar vista previa de ruta en opciones">
          <group id="3000">
             <function start="59" end="59" mask="00100000b" comment="NAVI_ROAD_PREVIEW (default: nicht_aktiv)">aktiv</function>
          </group>
@@ -1023,7 +1023,7 @@
             <function start="112" end="112" mask="00000010b" comment="NAVI_ONLINE_OPTIMIZATION_BUTTON (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Active Real-Time Traffic Info">
+      <code description="Navegación: información de tráfico activa en tiempo real">
          <group id="3000">
             <function start="59" end="59" comment="NAVI_TRAFFIC_INFO_MAP" mask="00010000b">aktiv</function>
          </group>
@@ -1034,79 +1034,79 @@
             <function start="23" end="23" comment="TI_FALLBACK_DISABLED" mask="01000000b">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Active la boussole">
+      <code description="Navigation: Activa la brújula">
          <group id="3000">
             <function start="5" end="5" comment="COMPASS" mask="00000001b">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Affichage de la vue sortie autoroute dans HUD">
+      <code description="Navigation: Mostrando la vista de salida de la autopista en HUD">
          <group id="3000">
             <function start="65" end="65" mask="00001000b" comment="JUNCTION_VIEW_HUD (default: nicht_aktiv. Aktiv si production date après 1114)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Itinéraire en mode demo">
+      <code description="Navigation: Itinerario en modo demo">
          <group id="3000">
             <function start="135" end="135" mask="00001000b" comment="ROUTE_FLIGHT (default: aktiv)">aktiv</function>
             <function start="111" end="111" mask="00001000b" comment="NAVI_SCROLLING_ALONG_ROUTE (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Propose un arrêt pour ravitaillement essence si nécessaire">
+      <code description="Navigation: Ofrece una parada para repostar si es necesario.">
          <group id="3000">
             <function start="60" end="60" mask="00100000b" comment="NAVI_FUELSTOP_PROPOSAL (default: aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Ajout des catégories de Trafic info dans les options">
+      <code description="Navigation: Agregue categorías de información de tráfico en las opciones">
          <group id="3000">
             <function start="16" end="16" mask="00000010b" comment="TRAFFIC_CATEGORIES (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Ajoute une étape sur le trajet (fonction aimant)">
+      <code description="Navigation: Añade un paso en la ruta (función de imán)">
          <group id="3000">
             <function start="111" end="111" mask="00010000b" comment="NAVI_ROUTENMAGNET (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Ajoute le menu Route express dans les préférences de guidage">
+      <code description="Navigation: Agregue el menú Ruta Express a las preferencias de guía">
          <group id="3000">
             <function start="108" end="108" mask="00000100b" comment="NAVI_EXPRESS_ROADS (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: active les popup de guidage SPLIT et FULL">
+      <code description="Navigation: activar las ventanas emergentes de guía DIVIDIDA y COMPLETA">
          <group id="3000">
             <function start="62" end="62" mask="00001000b" comment="NAVI_SPLIT_GUIDINGPOPUP (default: nicht_aktiv)">aktiv</function>
             <function start="62" end="62" mask="00010000b" comment="NAVI_FULL_GUIDINGPOPUP (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Navigation: Voix femme (par default)">
+      <code description="Navigation: Voz femenina (predeterminada)">
          <group id="3000">
             <function start="73" end="73" mask="00001111b" comment="SPRECHERWAHL1 (default: weiblich)">weiblich</function>
             <function start="73" end="73" mask="11110000b" comment="SPRECHERWAHL2 (default: weiblich)">weiblich</function>
             <function start="74" end="74" mask="00001111b" comment="SPRECHERWAHL3 (default: weiblich)">weiblich</function>
          </group>
       </code>
-      <code description="Navigation: Voix homme">
+      <code description="Navigation: Voz masculina">
          <group id="3000">
             <function start="73" end="73" mask="00001111b" comment="SPRECHERWAHL1 (default: weiblich)">maennlich</function>
             <function start="73" end="73" mask="11110000b" comment="SPRECHERWAHL2 (default: weiblich)">maennlich</function>
             <function start="74" end="74" mask="00001111b" comment="SPRECHERWAHL3 (default: weiblich)">maennlich</function>
          </group>
       </code>
-      <code description="Office: Speech to Text (Email ou SMS) Nécessite souscription Nuance">
+      <code description="Office: Voz a texto (correo electrónico o SMS) Requiere suscripción a Nuance">
          <group id="3003">
             <function start="1" end="1" mask="00010000b" comment="SPEECH_2_TEXT (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Caméras: Suppression des messages légaux">
+      <code description="Caméras: Eliminación de mensajes legales">
          <group id="3001">
             <function start="52" end="52" mask="11111111b" comment="MACRO_CAM_LEGALDISCLAIMER (default: 06)">00</function>
             <function start="58" end="58" mask="11111111b" comment="LEGAL_DISCLAIMER_TIME (default: 00)">00</function>
          </group>
       </code>
-      <code description="Options: Activation menu développeur">
+      <code description="Options: Activación del menú de desarrollador">
          <group id="3000">
             <function start="74" end="74" mask="01000000b" comment="ENTWICKLER_MENUE (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Téléphone: Sonnerie du téléphone (iOS only)">
+      <code description="Téléphone: Tono de llamada del teléfono (solo iOS)">
          <group id="3003">
             <function start="6" end="6" mask="10000000b" comment="INBAND_RINGING (default: nicht_aktiv)">aktiv</function>
          </group>
@@ -1131,12 +1131,12 @@
             <function start="8" end="8" mask="00000011b" comment="RINGTONE (default: 00)">03</function>
          </group>
       </code>
-      <code description="Téléphone: Activation de Sire Eyes Free (default: aktiv)">
+      <code description="Téléphone: Activar Siri Eyes Free (predeterminado: activo)">
          <group id="3003">
             <function start="3" end="3" mask="00001000b" comment="CE_DEVICE_SPEECH_RECOGNITION (default: 01)">01</function>
          </group>
       </code>
-      <code description="Réglages: Son du Gong BMW (default: BMW)">
+      <code description="Configuración: Sonido BMW Gong (predeterminado: BMW)">
          <group id="3002">
             <function start="26" end="26" mask="00111000b" comment="SOUND_SIGNAL_SET (default: 00)">00</function>
          </group>
@@ -1156,12 +1156,12 @@
             <function start="26" end="26" mask="00111000b" comment="SOUND_SIGNAL_SET (default: 00)">03</function>
          </group>
       </code>
-      <code description="Réglages: Ecran de démarrage BMW Connected Drive 1 (default: BMW)">
+      <code description="Configuración: Pantalla de inicio de BMW Connected Drive 1 (predeterminado: BMW)">
          <group id="3001">
             <function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM (default: 00)">00</function>
          </group>
       </code>
-      <code description="Réglages: Ecran de démarrage M Performance (default: BMW)">
+      <code description="Configuración: pantalla de inicio de M Performance (predeterminado: BMW)">
          <group id="3001">
             <function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM (default: 00)">01</function>
          </group>
@@ -1206,13 +1206,13 @@
             <function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM (default: 00)">09</function>
          </group>
       </code>
-	  <code description="Réglages: Activation GPS tracking (Semble ne pas fonctionner sans abonnement ...)">
+	  <code description="Configuración: activación de rastreo GPS (parece no funcionar sin suscripción) ...)">
          <group id="3003">
             <function start="15" end="15" mask="00000001b" comment="ASSIST_SVR_SHOW (default: nicht_aktiv)">aktiv</function>
             <function start="14" end="14" mask="10000000b" comment="ASSIST_VEHICLEFINDER_SHOW (default: aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Réglages (EXPERT): Activation Bluetooth Tethering - nécessite de mofifier le provisioning XML via Tool32">
+      <code description="Configuración (EXPERTO): Habilitar conexión Bluetooth: requiere modificar el aprovisionamiento XML a través de Tool32">
          <group id="3003">
             <function start="3" end="3" mask="00000010b" comment="DUN_PROFILE (default: 00)">01</function>
             <function start="3" end="3" mask="00000100b" comment="PAN_PROFILE (default: 00)">01</function>
@@ -1224,12 +1224,12 @@
             <function start="60" end="60" mask="00010000b" comment="ROUTEN_ID_GUIDEDTOURS (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="-- Don't work -- Réglages: Configuration du contrôle de traction (Le menu est bien là mais inopérant)">
+      <code description="-- No funciona - Configuración: Configuración del control de tracción (El menú está ahí pero no funciona)">
          <group id="3000">
             <function start="134" end="134" mask="00001000b" comment="TRACTION_DEMAND_CONTROL (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="-- Don't work -- Téléphone: Affichage de l'icône des contacts">
+      <code description="-- No funciona - Teléfono: muestra el ícono de contactos">
          <group id="3003">
             <function start="12" end="12" mask="00001000b" comment="CONTACTS_ICON (default: nicht_aktiv)">aktiv</function>
          </group>
@@ -1239,7 +1239,7 @@
             <function start="13" end="13" mask="10000000b" comment="MACRO_PMA_AUSPARKEN (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="-- Don't work -- Réglages: Active PDC automatique (nécessite hardware spécifique)">
+      <code description="-- No funciona - Configuración: Habilitar PDC automático (requiere hardware específico)">
          <group id="3001">
             <function start="64" end="64" mask="00010000b" comment="ACTIVE_PDC (default: nicht_aktiv)">aktiv</function>
             <function start="65" end="65" mask="01000000b" comment="AUTO_PDC (default: nicht_aktiv)">aktiv</function>
@@ -1260,7 +1260,7 @@
             <function start="109" end="109" mask="10000000b" comment="HIGH_BEAM_ASSISTANT (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="-- TESTING -- Eclairage: Ajout éclairage pas de porte (Follow-Me-Home Step 2 sur 2 - voir FEM)">
+      <code description="-- Don't work -- Eclairage: Affichage High-Beam Assistant (HBA)">
          <group id="3000">
             <function start="26" end="26" mask="00001000b" comment="KEY_CONF_COMFORT_HOMELIGHT (default: nicht_aktiv)">aktiv</function>
          </group>
@@ -1292,97 +1292,97 @@
       </code>
    </cafd>
    <cafd id="000009C8" name="KOMBI L7_MID" author="Botho (public)" series="F020,F030">
-      <code description="Tableau de bord: Affichage de la vitesse digitale">
+      <code description="Panel de control: pantalla digital de velocidad">
          <group id="3000">
             <function start="1" end="1" mask="00000010b" comment="BC_DIGITAL_V (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-	  <code description="Tableau de bord: Affichage de la vitesse réelle">
+	  <code description="Panel de control: visualización de velocidad real">
          <group id="3000">
             <function start="1" end="1" mask="01000000b" comment="BC_V_KORREKTUR (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Tableau de bord: Seuil de la 1ère alerte réserve carburant à 70km (90km par default)">
+      <code description="Panel de control: Umbral para la 1.ª alerta de reserva de combustible a los 70 km (90 km por defecto)">
          <group id="3000">
             <function start="35" end="35" mask="11111111b" comment="CC_RW_WARNUNG_2 (default: 5A)">46</function>
          </group>
       </code>
-      <code description="Tableau de bord: Seuil de la 1ère alerte réserve carburant à 90km (90km par default)">
+      <code description="Panel de control: Umbral para la primera alerta de reserva de combustible a los 90 km (90 km por defecto)">
          <group id="3000">
             <function start="35" end="35" mask="11111111b" comment="CC_RW_WARNUNG_2 (default: 5A)">5A</function>
          </group>
       </code>
-      <code description="Tableau de bord: Seuil de la 2ème alerte réserve carburant à 30km (50km par default)">
+      <code description="Tablero: Umbral para la segunda alerta de reserva de combustible a los 30 km (50 km por defecto)">
          <group id="3000">
             <function start="29" end="29" mask="11111111b" comment="CC_RW_WARNUNG (default: 32)">1E</function>
          </group>
       </code>
-      <code description="Tableau de bord: Seuil de la 2ème alerte réserve carburant à 50km (50km par default)">
+      <code description="Panel de control: Umbral para la alerta de 2.ª reserva de combustible a los 50 km (50 km por defecto)">
          <group id="3000">
             <function start="29" end="29" mask="11111111b" comment="CC_RW_WARNUNG (default: 32)">32</function>
          </group>
       </code>
-      <code description="Tableau de bord: Désactivation reset auto du compteur journalier (4h par default)">
+      <code description="Panel de control: Desactivación de reinicio automático del contador diario (4h por defecto)">
          <group id="3000">
             <function start="44" end="44" mask="11111111b" comment="BC_AUTORESET_ZEIT (default: 04)">FF</function>
          </group>
       </code>
-      <code description="Tableau de bord: Active l'éclairage de jour y compris la nuit">
+      <code description="Panel de control: active la iluminación diurna, incluida la nocturna">
          <group id="3007">
             <function start="10" end="10" mask="11111111b" comment="DIM_NACHT_EIN (default: 08)">FF</function>
          </group>
       </code>
-      <code description="Tableau de bord: Affichage permanent du Logo M performance en bas à droite (1/2)">
+      <code description="Panel de control: visualización permanente del logotipo M performance en la parte inferior derecha (1/2)">
          <group id="3003">
             <function start="7" end="7" mask="00000100b" comment="MPM_ENABLE (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="Tableau de bord: Choix Logo M performance M50d (2/2)">
+      <code description="Tablero: Choice Logo M performance M50d (2/2)">
          <group id="3000">
             <function start="43" end="43" mask="11110000b" comment="MPM_LOGO (default: ag)">50d</function>
          </group>
       </code>
-      <code description="Tableau de bord: Choix Logo M performance 135i (2/2)">
+      <code description="Tablero: Choice Logo M performance 135i (2/2)">
          <group id="3000">
             <function start="43" end="43" mask="11110000b" comment="MPM_LOGO (default: ag)">135i</function>
          </group>
       </code>
-      <code description="Tableau de bord: Choix Logo M performance 140i (2/2)">
+      <code description="Tablero: Choice Logo M performance 140i (2/2)">
          <group id="3000">
             <function start="43" end="43" mask="11110000b" comment="MPM_LOGO (default: ag)">140i</function>
          </group>
       </code>
-      <code description="Tableau de bord: Choix Logo M performance 235i (2/2)">
+      <code description="Tablero: Choice Logo M performance 235i (2/2)">
          <group id="3000">
             <function start="43" end="43" mask="11110000b" comment="MPM_LOGO (default: ag)">235i</function>
          </group>
       </code>
-      <code description="Tableau de bord: Choix Logo M performance 240i (2/2)">
+      <code description="Tablero: Choice Logo M performance 240i (2/2)">
          <group id="3000">
             <function start="43" end="43" mask="11110000b" comment="MPM_LOGO (default: ag)">240i</function>
          </group>
       </code>
-      <code description="Tableau de bord: Choix Logo M performance 340i (2/2)">
+      <code description="Tablero: Choice Logo M performance 340i (2/2)">
          <group id="3000">
             <function start="43" end="43" mask="11110000b" comment="MPM_LOGO (default: ag)">340i</function>
          </group>
       </code>
-      <code description="Tableau de bord: Choix Logo M performance 550d (2/2)">
+      <code description="Tablero: Choice Logo M performance 550d (2/2)">
          <group id="3000">
             <function start="43" end="43" mask="11110000b" comment="MPM_LOGO (default: ag)">550d</function>
          </group>
       </code>
-      <code description="Tableau de bord: Choix Logo M performance hybride (2/2)">
+      <code description="Tablero: Choice Logo M híbrido de alto rendimiento (2/2)">
          <group id="3000">
             <function start="43" end="43" mask="11110000b" comment="MPM_LOGO (default: ag)">phev</function>
          </group>
       </code>
-      <code description="Tableau de bord et HUD: Logo au démarrage par default">
+      <code description="Panel de control y HUD: logotipo en el inicio predeterminado">
          <group id="3000">
             <function start="0" end="0" mask="11110000b" comment="BMW_LOGO (default: ag)">ag</function>
          </group>
       </code>
-      <code description="Tableau de bord et HUD: Logo au démarrage M performance">
+      <code description="Tablero y HUD: Logotipo al iniciar M performance">
          <group id="3000">
             <function start="0" end="0" mask="11110000b" comment="BMW_LOGO (default: ag)">m_performance</function>
          </group>
@@ -1417,17 +1417,17 @@
             <function start="0" end="0" mask="11110000b" comment="BMW_LOGO (default: ag)">50d</function>
          </group>
       </code>
-      <code description="Tableau de bord et HUD: Logo au démarrage M performance M2">
+      <code description="Panel de control y HUD: Logotipo al inicio M performance M2">
          <group id="3000">
             <function start="0" end="0" mask="11110000b" comment="BMW_LOGO (default: ag)">M2</function>
          </group>
       </code>
-      <code description="Tableau de bord et HUD: Logo au démarrage M performance M3">
+      <code description="Panel de control y HUD: Logotipo al inicio M performance M3">
          <group id="3000">
             <function start="0" end="0" mask="11110000b" comment="BMW_LOGO (default: ag)">M4</function>
          </group>
       </code>
-      <code description="Tableau de bord et HUD: Logo au démarrage M performance M4 GTS">
+      <code description="Panel de control y HUD: Logo al inicio M performance M4 GTS">
          <group id="3000">
             <function start="0" end="0" mask="11110000b" comment="BMW_LOGO (default: ag)">M4 GTS</function>
          </group>
@@ -1437,17 +1437,17 @@
             <function start="0" end="0" mask="11110000b" comment="BMW_LOGO (default: ag)">phev</function>
          </group>
       </code>
-      <code description="Tableau de bord: Affichage de l'heure en bas à droite du tableau de bord (I-Step après 3.54.3)">
+      <code description="Panel: visualización de la hora en la parte inferior derecha del panel (I-Step después de 3.54.3)">
          <group id="3000">
             <function start="53" end="53" mask="01000000b" comment="BASISANZEIGE_VARIANTE (default: nicht_aktiv. Aktiv si production date après 0315)">aktiv</function>
          </group>
       </code>
-      <code description="Tableau de bord: Affichage rapports en mode Sport (S1 à S8 au lieu de DS)">
+      <code description="Tablero: pantalla de marcha en modo Sport (S1 a S8 en lugar de DS)">
          <group id="3000">
             <function start="41" end="41" mask="00010000b" comment="SPA_SPORT_ENABLE (default: nicht_aktiv. Aktiv si production date après 0315)">aktiv</function>
          </group>
       </code>
-	  <code description="Tableau de bord: Affichage rapports au compteur">
+	  <code description="Panel de control: visualización de informes de medidores">
          <group id="3003">
             <function start="0" end="0" mask="00010000b" comment="SPA_IST_GANG_ENABLE (default: nicht_aktiv)">aktiv</function>
          </group>
@@ -1467,12 +1467,12 @@
             <function start="43" end="43" mask="00000010b" comment="DSC_OFF_ENTFLECHTUNG_ENABLE (default: nicht_aktiv)">aktiv</function>
          </group>
       </code>
-      <code description="HUD: Durée de démarrage à 10s pour voir le logo plus longtemps (default: 4s)">
+      <code description="HUD: Duración del inicio en 10 segundos para ver el logotipo por más tiempo (predeterminado: 4 segundos)">
          <group id="300B">
             <function start="20" end="20" mask="11111111b" comment="HUD_STARTUP_TIME (default: 28. 32 si production date après 0315)">0A</function>
          </group>
       </code>
-      <code description="HUD: Affichage de l'assistant de distance (Step 1 sur 3 - voir KAFAS2 et HU_NBT - nécessite Active Cruise Control)">
+      <code description="HUD: Pantalla del asistente de distancia (Paso 1 de 3; consulte KAFAS2 y HU_NBT; requiere control de crucero activo)">
          <group id="3000">
             <function start="1" end="1" mask="00000001b" comment="IBRAKE_ABSTAND_ENABLE (default: nicht_aktiv)">aktiv</function>
          </group>
@@ -1504,12 +1504,12 @@
       </code>
    </cafd>
    <cafd id="000007A1" name="REM_01" author="Botho (public)" series="F020,F030">
-      <code description="Vitres arrières: Activation à l'ouverture des portes arrières">
+      <code description="Lunetas traseras: Activación al abrir las puertas traseras">
          <group id="3050">
             <function start="0" end="0" mask="00000001b" comment="FH_TUERAUF_STOP_MAUT (default: aktiv)">nicht_aktiv</function>
          </group>
       </code>
-      <code description="Angel Eyes (DRL): Activation feux de jour sur le hayon arrière (Step 3 sur 3 - voir HU-NBT et FEM_BODY)">
+      <code description="Angel Eyes (DRL): Activación de las luces de circulación diurna en el portón trasero (Paso 3 de 3 - ver HU-NBT y FEM_BODY)">
          <group id="3062">
             <function start="220" end="220" mask="00111111b" comment="MAPPING_TAGFAHRL_H2_L_OUTPUT LED hayon intérieur gauche (default: 00)">16</function>
             <function start="230" end="230" mask="00111111b" comment="MAPPING_TAGFAHRL_H2_R_OUTPUT LED hayon intérieur droit (default: 00)">17</function>
@@ -1517,7 +1517,7 @@
             <function start="210" end="210" mask="00111111b" comment="MAPPING_TAGFAHRL_H_R_OUTPUT LED hayon exterieur droit (default: 00)">15</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard arrières: Activation (Step 1 sur 2 - voir FEM_BODY)">
+      <code description="Luces antiniebla traseras: Activación (Paso 1 de 2 - ver FEM_BODY)">
          <group id="3063">
             <function start="40" end="40" mask="00111111b" comment="Mapping_Nebelschlussl_L_output lampe hayon gauche (default: 1C)">1C</function>
             <function start="41" end="41" mask="00011111b" comment="Mapping_Nebelschlussl_L_Function lampe hayon gauche (default: 0E)">0E</function>
@@ -1525,7 +1525,7 @@
             <function start="51" end="51" mask="00011111b" comment="Mapping_Nebelschlussl_R_Function lampe hayon droit (default: 0E)">0E</function>
          </group>
       </code>
-      <code description="Feux anti-brouillard arrières: Désactivation (Step 1 sur 2 - voir FEM_BODY)">
+      <code description="Luces antiniebla traseras: Desactivación (Paso 1 de 2 - ver FEM_BODY)">
          <group id="3063">
             <function start="40" end="40" mask="00111111b" comment="Mapping_Nebelschlussl_L_output lampe hayon gauche (default: 1C)">00</function>
             <function start="41" end="41" mask="00011111b" comment="Mapping_Nebelschlussl_L_Function lampe hayon gauche (default: 0E)">0E</function>
@@ -1533,7 +1533,7 @@
             <function start="51" end="51" mask="00011111b" comment="Mapping_Nebelschlussl_R_Function lampe hayon droit (default: 0E)">0E</function>
          </group>
       </code>
-      <code description="Caméra arrière: Activation sans limite de vitesse (caméras latérales: voir TRSVC)">
+      <code description="Caméra arrière: Activación sin límite de velocidad (cámaras laterales: ver TRSVC)">
          <group id="3203">
             <function start="7" end="7" mask="11111111b" comment="V_SCHWELLE_1: vitesse de désactivation caméras rétroviseurs (default: 0F)">FF</function>
             <function start="8" end="8" mask="11111111b" comment="V_SCHWELLE_2: vitesse de désactivation caméra arrière (default: 0F)">FF</function>
@@ -1541,13 +1541,13 @@
             <function start="10" end="10" mask="11111111b" comment="D_SCHWELLE_2: distance de désactivation caméra arrière (default: 0A)">FF</function>
          </group>
       </code>
-      <code description="Feux freinage d'urgence: Activation LED arrères (default: activé)">
+      <code description="Luces de freno de emergencia: Activación de LED trasero (predeterminado: activado)">
          <group id="3062">
             <function start="110" end="110" mask="00111111b" comment="MAPPING_BRAKEFORCED_L_OUTPUT (default: bl_l)">bl_l</function>
             <function start="120" end="120" mask="00111111b" comment="MAPPING_BRAKEFORCED_R_OUTPUT (default: bl_r)">bl_r</function>
          </group>
       </code>
-      <code description="Feux freinage d'urgence: Augmentation fréquence de clignotement LED arrères (default: 03)">
+      <code description="Luces de freno de emergencia: mayor frecuencia de parpadeo del LED trasero (predeterminado: 03)">
          <group id="3064">
             <function start="17" end="17" mask="00001110b" comment="ESS_BLINKFREQ_1 (default: 03)">05</function>
             <function start="17" end="17" mask="01110000b" comment="ESS_BLINKFREQ_2 (default: 03)">05</function>
@@ -1555,29 +1555,29 @@
       </code>
    </cafd>
    <cafd id="000000B5" name="CFAS_PLX_1" author="Botho (public)" series="F020,F030">
-      <code description="Sièges électriques: Gong sonore lors de la mémorisation">
+      <code description="Asientos eléctricos: gong sonoro al memorizar">
          <group id="3000">
             <function start="2" end="2" mask="00001000b" comment="MEMORY_GONG (default: nicht_aktiv. Aktiv si production date après 0714)">aktiv</function>
          </group>
       </code>
-      <code description="Sièges électriques (Easy Entry): Activation de la fonction Easy Entry">
+      <code description="Asientos eléctricos (Easy Entry): Activación de la función Easy Entry">
          <group id="3000">
             <function start="0" end="0" mask="00011100b" comment="EINAUSSTIEGSHILFE (default: nicht_aktiv)">Modus_FA_SLV</function>
          </group>
       </code>
-      <code description="Sièges électriques (Easy Entry): Distance minimum du siège par rapport à la butée arrière">
+      <code description="Asientos eléctricos (Easy Entry): Distancia mínima del asiento desde el tope trasero">
          <group id="3012">
             <function start="4" end="5" mask="11111111b" comment="EAH_SCHUTZFREIRAUM_HINTEN_SLV_PHYS (default: 00, 64)">00, 32</function>
          </group>
       </code>
-      <code description="Sièges électriques (Easy Entry): Distance de recul du siège">
+      <code description="Asientos eléctricos (Easy Entry): Distancia del respaldo del asiento">
          <group id="3012">
             <function start="0" end="1" mask="11111111b" comment="EAH_VERFAHRWEG_SLV_PHYS (default: 00, 3C)">00, 32</function>
          </group>
       </code>
    </cafd>
    <cafd id="00000223" name="TRSVC" author="Botho (public)" series="F020,F030">
-      <code description="Caméras latérales: Activation sans limite de vitesse (caméra arrière: voir REM_01)">
+      <code description="Cámaras laterales: Activación sin límite de velocidad (cámara trasera: ver REM_01)">
          <group id="3000">
             <function start="114" end="114" mask="11111111b" comment="SV_Activate_Speed_Limit (default: 0F)">FF</function>
             <function start="115" end="115" mask="11111111b" comment="SV_Deactivate_Speed (default: 0F)">FF</function>
