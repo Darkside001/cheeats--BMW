@@ -1375,7 +1375,7 @@
     				<function start="26" end="26" mask="00000001b" comment="WB_GB_ENABLE">01</function>
    			</group>
 		</code>
-		<code description="Start Stop está desactivado por defecto">
+		<code description="Start/Stop está desactivado por defecto">
 			<group id="3023">
 				<function start="0" end="0" mask="00010000b" comment="TCM_MSA_DEFAULT_OFF">01</function>
 			</group>
@@ -1604,7 +1604,7 @@
 				<function start="55" end="55" mask="10000000b" comment="HUD_TURNSIGNAL">01</function>
 			</group>
 		</code>
-		<code description="El sistema de sonido cambió a Bang & Olufsen">
+		<code description="El sistema de sonido cambió a Bang  Olufsen">
 			<group id="3000">
 				<function start="21" end="21" mask="01100000b" comment="HIGH_END_AUDIO_B_UND_W">keine_insz</function>
 			</group>
@@ -1680,7 +1680,7 @@
 				<function start="19" end="19" mask="00000001b" comment="CC_TEMPERATURWARNUNG">00</function>
 			</group>
 		</code>
-		<code description="Muestra si Auto Stop & Go está activado en el panel de instrumentos">
+		<code description="Muestra si Auto Start/Stop está activado en el panel de instrumentos">
 			<group id="3003">
 				<function start="3" end="3" mask="00001000b" comment="MSA_VERFUEGBARANZEIGE_ENABLE">01</function>
 			</group>
@@ -2260,12 +2260,12 @@
     				<function start="26" end="26" mask="00000001b" comment="WB_GB_ENABLE">01</function>
    			</group>
 		</code>
-		<code description="Stop&Go está desactivado por defecto">
+		<code description="Start/Stop está desactivado por defecto">
 			<group id="3023">
 				<function start="0" end="0" mask="00010000b" comment="TCM_MSA_DEFAULT_OFF">01</function>
 			</group>
 		</code>
-		<code description="Stop & Go recuerda el último estado">
+		<code description="Start/Stop recuerda el último estado">
 			<group id="3023">
 				<function start="0" end="0" mask="00100000b" comment="TCM_MSA_MEMORY">01</function>
 			</group>
@@ -2489,7 +2489,7 @@
 				<function start="55" end="55" mask="10000000b" comment="HUD_TURNSIGNAL">01</function>
 			</group>
 		</code>
-		<code description="El sistema de sonido cambió a Bang & Olufsen">
+		<code description="El sistema de sonido cambió a Bang  Olufsen">
 			<group id="3000">
 				<function start="21" end="21" mask="01100000b" comment="HIGH_END_AUDIO_B_UND_W">keine_insz</function>
 			</group>
@@ -2587,7 +2587,7 @@
 				<function start="30" end="30" mask="00000001b" comment="CC_TEMPERATURWARNUNG">00</function>
 			</group>
 		</code>
-		<code description="Muestra si Auto Stop & Go está activado en el panel de instrumentos">
+		<code description="Muestra si Auto Start/Stop está activado en el panel de instrumentos">
 			<group id="3003">
 				<function start="6" end="6" mask="00001000b" comment="MSA_VERFUEGBARANZEIGE_ENABLE">01</function>
 			</group>
@@ -2760,12 +2760,12 @@
     				<function start="26" end="26" mask="00000001b" comment="WB_GB_ENABLE">01</function>
    			</group>
 		</code>
-		<code description="Stop & Go está desactivado de forma predeterminada">
+		<code description="Start/Stop está desactivado de forma predeterminada">
 			<group id="3023">
 				<function start="0" end="0" mask="00010000b" comment="TCM_MSA_DEFAULT_OFF">01</function>
 			</group>
 		</code>
-		<code description="Stop & Go recuerda el último estado">
+		<code description="Start/Stop recuerda el último estado">
 			<group id="3023">
 				<function start="0" end="0" mask="00100000b" comment="TCM_MSA_MEMORY">01</function>
 			</group>
@@ -2989,7 +2989,7 @@
 				<function start="55" end="55" mask="10000000b" comment="HUD_TURNSIGNAL">01</function>
 			</group>
 		</code>
-		<code description="El sistema de sonido cambió a Bang & Olufsen">
+		<code description="El sistema de sonido cambió a Bang  Olufsen">
 			<group id="3000">
 				<function start="21" end="21" mask="01100000b" comment="HIGH_END_AUDIO_B_UND_W">keine_insz</function>
 			</group>
@@ -3087,7 +3087,7 @@
 				<function start="30" end="30" mask="00000001b" comment="CC_TEMPERATURWARNUNG">00</function>
 			</group>
 		</code>
-		<code description="Muestra si Auto Stop & Go está activado en el panel de instrumentos">
+		<code description="Muestra si Auto Start/Stop está activado en el panel de instrumentos">
 			<group id="3003">
 				<function start="6" end="6" mask="00001000b" comment="MSA_VERFUEGBARANZEIGE_ENABLE">01</function>
 			</group>
@@ -3944,12 +3944,12 @@
     				<function start="26" end="26" mask="00000001b" comment="WB_GB_ENABLE">01</function>
    			</group>
 		</code>
-		<code description="Stop&Go está desactivado por defecto">
+		<code description="Start/Stop está desactivado por defecto">
 			<group id="3023">
 				<function start="0" end="0" mask="00010000b" comment="TCM_MSA_DEFAULT_OFF">01</function>
 			</group>
 		</code>
-		<code description="Stop & Go recuerda el último estado">
+		<code description="Start/Stop recuerda el último estado">
 			<group id="3023">
 				<function start="0" end="0" mask="00100000b" comment="TCM_MSA_MEMORY">01</function>
 			</group>
@@ -4236,7 +4236,7 @@
 				<function start="0" end="0" mask="01000000b" comment="HUD_TURNSIGNAL">01</function>
 			</group>
 		</code>
-		<code description="El sistema de sonido cambió a Bang & Olufsen">
+		<code description="El sistema de sonido cambió a Bang  Olufsen">
 			<group id="3000">
 				<function start="21" end="21" mask="01100000b" comment="HIGH_END_AUDIO_B_UND_W">keine_insz</function>
 			</group>
@@ -4333,7 +4333,7 @@
 				<function start="30" end="30" mask="00000001b" comment="CC_TEMPERATURWARNUNG">00</function>
 			</group>
 		</code>
-		<code description="Muestra si Auto Stop & Go está activado en el panel de instrumentos">
+		<code description="Muestra si Auto Start/Stop está activado en el panel de instrumentos">
 			<group id="3003">
 				<function start="6" end="6" mask="00001000b" comment="MSA_VERFUEGBARANZEIGE_ENABLE">01</function>
 			</group>
