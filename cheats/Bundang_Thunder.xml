@@ -1375,7 +1375,7 @@
     				<function start="26" end="26" mask="00000001b" comment="WB_GB_ENABLE">01</function>
    			</group>
 		</code>
-		<code description="Stop & Go está desactivado por defecto">
+		<code description="Start Stop está desactivado por defecto">
 			<group id="3023">
 				<function start="0" end="0" mask="00010000b" comment="TCM_MSA_DEFAULT_OFF">01</function>
 			</group>
