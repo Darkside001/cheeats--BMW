@@ -4,18 +4,18 @@
 	Remenber-->
 	
 	<!--Serie-3-F034-->
-	<cafd id="00000911" name="ACSM_4B" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="00000911" name="ACSM_4B" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Sonido de advertencia del cinturón de seguridad durante solo 5 segundos">
    			<group id="3001">
     				<function start="3" end="3" mask="11111111b" comment="GWF_SBR_WARNDAUER">05</function>
    			</group>
 		</code>
-		<code description="Se quitó la luz de advertencia del cinturón de seguridad del conductor">
+		<code description="Quitar la luz de advertencia del cinturón de seguridad del conductor">
    			<group id="3000">
     				<function start="16" end="16" mask="00000001b" comment="SBR_PreWarning_Fahrer">00</function>
    			</group>
 		</code>
-		<code description="Se quitó la luz de advertencia del cinturón de seguridad del pasajero"> 
+		<code description="Quitar la luz de advertencia del cinturón de seguridad del pasajero"> 
    			<group id="3000">
     				<function start="16" end="16" mask="00000010b" comment="SBR_PreWarning_Beifahrer">00</function>
    			</group>
@@ -31,14 +31,14 @@
    			</group>
 		</code>
  	</cafd>
-	<cafd id="000019CC" name="DSC_CT01" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="000019CC" name="DSC_CT01" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Control de lanzamiento activado (EGS activado también)">
 			<group id="3000">
 				<function start="26" end="26" mask="00010000b" comment="C_Funktion_LaunchControl">01</function>
 			</group>
 		</code>
 	</cafd>
-	<cafd id="0000023F" name="GKEB23" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="0000023F" name="GKEB23" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Activar control de lanzamiento (DSC también está activado)">
 			<group id="3000">
 				<function start="1" end="1" mask="10000000b" comment="LC">01</function>
@@ -51,7 +51,7 @@
 			</group>
 		</code>
 	</cafd>
-	<cafd id="00000794" name="FEM_01" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="00000794" name="FEM_01" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Luces de emergencia durante una frenada brusca">
    			<group id="3060">
     				<function start="26" end="26" mask="00000001b" comment="WB_GB_ENABLE">01</function>
@@ -160,7 +160,7 @@
 			</group>
 		</code>		
  	</cafd>
-	<cafd id="0000157F" name="HKFM" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="0000157F" name="HKFM" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Cierre automático del maletero (interruptor del espacio para los pies + control remoto)">
 			<group id="3010">
 				<function start="0" end="0" mask="00001000b" comment="TASTER_FBD">01</function>
@@ -219,7 +219,7 @@
 			</group>
 		</code>
 	</cafd>
-	<cafd id="00001EF6" name="HU_NBT_EVO" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="00001EF6" name="HU_NBT_EVO" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Ajuste automático de la hora">
 			<group id="3000">
 				<function start="19" end="19" mask="00000110b" comment="SETTINGS_TIME_AUTOMATIC">navigation</function>
@@ -366,7 +366,7 @@
 			</group>
 		</code>
 	</cafd>
-	<cafd id="0000067B" name="ICMQL" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="0000067B" name="ICMQL" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Modo ecológico predeterminado al iniciar">
 			<group id="3000">
 				<function start="36" end="36" mask="00001000b" comment="IcmKod_B_InitEco">verbaut</function>
@@ -383,7 +383,7 @@
 			</group>
 		</code>
 	</cafd>
-	<cafd id="000016EE" name="IHKA_VA02" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="000016EE" name="IHKA_VA02" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Recuerde el último estado del aire acondicionado">
    			<group id="3003">  
     				<function start="0" end="0" mask="00000010b" comment="MEMORY_OFF">01</function>
@@ -400,7 +400,7 @@
    			</group>
 		</code>
  	</cafd>
-	<cafd id="00001148" name="Kafas2" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="00001148" name="Kafas2" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Asistente automático de luces altas">
    			<group id="3050">
     				<function start="1" end="1" mask="00000001b" comment="FLA_ON_OFF">FLA_on</function>
@@ -409,7 +409,7 @@
    			</group>
 		</code>
  	</cafd>
-	<cafd id="000009C8" name="KOMBI L7_MID" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="000009C8" name="KOMBI L7_MID" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Muestra teléfono, entretenimiento y reconocimiento de voz en HUD">
    			<group id="3003">
     				<function start="4" end="4" mask="00000001b" comment="HUD_ENTERTAINMENT_ENABLE">01</function>
@@ -475,7 +475,7 @@
 			</group>
 		</code>
  	</cafd>
-	<cafd id="000000B5" name="CFAS_PLX_1" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="000000B5" name="CFAS_PLX_1" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Fácil acceso activado">
 			<group id="3000">
 				<function start="0" end="0" mask="00011100b" comment="EINAUSSTIEGSHILFE">Modus_FA_SLV</function>
@@ -533,7 +533,7 @@
 			</group>
 		</code>
 	</cafd>
-	<cafd id="000000B6" name="CBFS_PLX_1" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="000000B6" name="CBFS_PLX_1" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Hidalgo">
 			<group id="3000">
 				<function start="1" end="1" mask="00000001b" comment="GENTLEMAN">01</function>
@@ -541,7 +541,7 @@
 			</group>
 		</code>
 	</cafd>
-	<cafd id="00000223" name="TRSVC" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+	<cafd id="00000223" name="TRSVC" author="Yomismo ES 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
 		<code description="Ajusta la vista lateral para poder verla en cualquier momento">
    			<group id="3000">
     				<function start="114" end="114" mask="11111111b" comment="SV_Activate_Speed_Limit">FF</function>
@@ -551,7 +551,7 @@
  	</cafd>
 	<!--End-Serie-3-F034-->
 	
-	<cafd id="000009C8" name="KOMBI L7_MID" author="Almaretto" series="F020,F030">
+	<cafd id="000009C8" name="KOMBI L7_MID" author="Yomismo ES" series="F020,F030">
         <code description="Reinicio automático de la computadora de viaje (nunca)">
             <group id="3000">
                 <function start="44" end="44" comment="BC_AUTORESET_ZEIT" mask="11111111b">FF</function>
