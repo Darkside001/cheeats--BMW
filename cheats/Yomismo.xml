@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FDL>
+    <!--Yomismo ES
+	Remenber-->
+	
+	<!--Serie-3-F034-->
+	<cafd id="00000911" name="ACSM_4B" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Sonido de advertencia del cinturón de seguridad durante solo 5 segundos">
+   			<group id="3001">
+    				<function start="3" end="3" mask="11111111b" comment="GWF_SBR_WARNDAUER">05</function>
+   			</group>
+		</code>
+		<code description="Se quitó la luz de advertencia del cinturón de seguridad del conductor">
+   			<group id="3000">
+    				<function start="16" end="16" mask="00000001b" comment="SBR_PreWarning_Fahrer">00</function>
+   			</group>
+		</code>
+		<code description="Se quitó la luz de advertencia del cinturón de seguridad del pasajero"> 
+   			<group id="3000">
+    				<function start="16" end="16" mask="00000010b" comment="SBR_PreWarning_Beifahrer">00</function>
+   			</group>
+		</code>
+		<code description="Eliminar el sonido de advertencia del cinturón de seguridad del conductor">
+   			<group id="3000">
+    				<function start="15" end="15" mask="00000010b" comment="SeatBeltReminder_SBR_Fahrer">00</function>
+   			</group>
+		</code>
+		<code description="Eliminar el sonido de advertencia del cinturón de seguridad del pasajero"> 
+   			<group id="3000">
+    				<function start="15" end="15" mask="00000100b" comment="SeatBeltReminder_SBR_Beifahrer">00</function>
+   			</group>
+		</code>
+ 	</cafd>
+	<cafd id="000019CC" name="DSC_CT01" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Control de lanzamiento activado (EGS activado también)">
+			<group id="3000">
+				<function start="26" end="26" mask="00010000b" comment="C_Funktion_LaunchControl">01</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="0000023F" name="GKEB23" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Activar control de lanzamiento (DSC también está activado)">
+			<group id="3000">
+				<function start="1" end="1" mask="10000000b" comment="LC">01</function>
+			</group>
+		</code>
+		<code description="Modificado para mostrar el rango de marchas en el modo Dynamic Sport)">
+			<group id="3000">
+				<function start="1" end="1" mask="00000001b" comment="Sportschalter">01</function>
+				<function start="0" end="0" mask="01000000b" comment="Sportschalter_alt">01</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="00000794" name="FEM_01" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Luces de emergencia durante una frenada brusca">
+   			<group id="3060">
+    				<function start="26" end="26" mask="00000001b" comment="WB_GB_ENABLE">01</function>
+   			</group>
+		</code>
+		<code description="Stop&Go está desactivado por defecto">
+			<group id="3023">
+				<function start="0" end="0" mask="00010000b" comment="TCM_MSA_DEFAULT_OFF">01</function>
+			</group>
+		</code>
+		<code description="Stop & Go recuerda el último estado">
+			<group id="3023">
+				<function start="0" end="0" mask="00100000b" comment="TCM_MSA_MEMORY">01</function>
+			</group>
+		</code>
+		<code description="El audio se apaga cuando se apaga el encendido"> 
+   			<group id="3020">
+    				<function start="1" end="1" mask="00000001b" comment="TCM_LOGIC_R_OFF_DOOR">01</function>
+   			</group>
+		</code>
+		<code description="Con el coche arancado al cerrar la puerta la bocina suena 2 veces: activa.">
+			<group id="3040">
+				<function start="1" end="1" mask="00100000b" comment="CLM_HORN_AT_SECURE">01</function>
+			</group>
+		</code>
+		<code description="Con el coche arancado al cerrar la puerta la bocina suena 2 veces: desactivada.">
+			<group id="3040">
+				<function start="1" end="1" mask="00100000b" comment="CLM_HORN_AT_SECURE">00</function>
+			</group>
+		</code>
+		<code description="Cuando bloquea la puerta, los espejos laterales se pliegan inmediatamente (plegado con cerradura)">
+			<group id="3053">
+				<function start="9" end="9" mask="11111111b" comment="KOMFORT_SCHLIESSEN">00</function>
+			</group>
+		</code>
+		<code description="Arrancar el motor sin aplicar el freno">
+   			<group id="3020">
+    				<function start="0" end="0" mask="00000001b" comment="TCM_STARTLOCK_BRAKE">00</function>
+   			</group>
+  		</code>
+		<code description="Arrancar el motor sin pisar el embrague">
+   			<group id="3020">
+    				<function start="0" end="0" mask="00000100b" comment="TCM_STARTLOCK_CLUTCH">00</function>
+   			</group>
+  		</code>
+		<code description="inicio de estacionamiento">
+   			<group id="3020">
+    				<function start="0" end="0" mask="00000010b" comment="TCM_STARTLOCK_PARK">00</function>
+    				<function start="1" end="1" mask="00010000b" comment="TCM_STARTLOCK_DRIVINGREADINESS">00</function>
+   			</group>
+  		</code>
+		<code description="Señal de giro de un toque 5 veces">
+   			<group id="3060">
+    				<function start="7" end="7" mask="00000111b" comment="BLINKZYKLEN_ANZAHL_TIPP">04</function>
+   			</group>
+  		</code>
+		<code description="Luces antiniebla de bienvenida (Fuerte_on)">
+			<group id="3063">
+				<function start="55" end="55" mask="11000000b" comment="MAPPING_NEBELSCHW_L_PART_OF_WL">hard_On</function>
+				<function start="66" end="66" mask="11000000b" comment="MAPPING_NEBELSCHW_R_PART_OF_WL">hard_On</function>
+			</group>
+		</code>
+		<code description="Luces antiniebla de bienvenida (Devil_on)">
+			<group id="3063">
+				<function start="55" end="55" mask="11000000b" comment="MAPPING_NEBELSCHW_L_PART_OF_WL">soft_On</function>
+				<function start="66" end="66" mask="11000000b" comment="MAPPING_NEBELSCHW_R_PART_OF_WL">soft_On</function>
+			</group>
+		</code>
+		<code description="luces antiniebla en curvas">
+			<group id="3073">
+				<function start="218" end="218" mask="00000010b" comment="C_CLC_ENA">01</function>
+				<function start="66" end="66" mask="00000001b" comment="C_BLC_ENA">01</function>
+			</group>
+			<group id="3066">
+				<function start="0" end="0" mask="00000001b" comment="KL_ENABLE_LI">01</function>
+				<function start="80" end="80" mask="00000001b" comment="KL_ENABLE_RE">01</function>
+			</group>
+			<group id="3062">
+				<function start="110" end="110" mask="00111111b" comment="MAPPING_ABBIEGEL_L_OUTPUT">0B</function>
+				<function start="121" end="121" mask="00111111b" comment="MAPPING_ABBIEGEL_R_OUTPUT">0C</function>
+			</group>
+		</code>
+		<code description="La luz de la puerta se enciende al dar marcha atrás">
+   			<group id="3070">
+    				<function start="11" end="11" mask="00010000b" comment="OVT_BEI_RUECKFAHRLICHT">01</function>
+   			</group>
+  		</code>
+		<code description="Desbloquea automáticamente las puertas del vehículo al parar el motor">
+   			<group id="3040">
+    				<function start="1" end="1" mask="00000010b" comment="CLM_UNLOCK_KL15OFF_AFTER_PIA_AUTO_LOCK">01</function>
+   			</group>
+  		</code>
+		<code description="Operación de cambio de paleta">
+   			<group id="3190">
+    				<function start="0" end="0" mask="00000001b" comment="PADDLES_VERBAUT">01</function>
+   			</group>
+  		</code>
+		<code description="La ventana sigue subiendo incluso cuando la puerta está abierta.">
+   			<group id="3050">
+    				<function start="0" end="0" mask="00000001b" comment="FH_TUERAUF_STOP_MAUT">00</function>
+   			</group>
+  		</code>
+		<code description="Al dar marcha atrás, el espejo del lado del pasajero se mueve hacia abajo sólo 30 grados.">
+			<group id="3110">
+				<function start="2" end="2" mask="11111111b" comment="ASP_BORDSTEINAUTOMATIK_DELTA">1E</function>
+			</group>
+		</code>		
+ 	</cafd>
+	<cafd id="0000157F" name="HKFM" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Cierre automático del maletero (interruptor del espacio para los pies + control remoto)">
+			<group id="3010">
+				<function start="0" end="0" mask="00001000b" comment="TASTER_FBD">01</function>
+				<function start="2" end="2" mask="00000100b" comment="SCH_TOEHKI">01</function>
+				<function start="2" end="2" mask="00001000b" comment="SCH_FBD">01</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo que levanta el spoiler: 70 km/h">
+			<group id="3100">
+				<function start="0" end="1" mask="11111111b" comment="V_ASP_OUT">00, 46</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo que levanta el spoiler: 80 km/h">
+			<group id="3100">
+				<function start="0" end="1" mask="11111111b" comment="V_ASP_OUT">00, 50</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo que levanta el spoiler: 90 km/h">
+			<group id="3100">
+				<function start="0" end="1" mask="11111111b" comment="V_ASP_OUT">00, 5A</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo que levanta el spoiler: 100 km/h">
+			<group id="3100">
+				<function start="0" end="1" mask="11111111b" comment="V_ASP_OUT">00, 64</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo que levanta el spoiler: 110 km/h (predeterminado)">
+			<group id="3100">
+				<function start="0" end="1" mask="11111111b" comment="V_ASP_OUT">00, 6E</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo que levanta el spoiler: 120 km/h">
+			<group id="3100">
+				<function start="0" end="1" mask="11111111b" comment="V_ASP_OUT">00, 78</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo para recoger el spoiler: 80 km/h">
+			<group id="3100">
+				<function start="2" end="3" mask="11111111b" comment="V_ASP_IN">00, 50</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo para recoger el spoiler: 70 km/h (predeterminado)">
+			<group id="3100">
+				<function start="2" end="3" mask="11111111b" comment="V_ASP_IN">00, 46</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo para recoger el spoiler: 60 km/h">
+			<group id="3100">
+				<function start="2" end="3" mask="11111111b" comment="V_ASP_IN">00, 3C</function>
+			</group>
+		</code>
+		<code description="Velocidad del vehículo para recoger el spoiler: 50 km/h">
+			<group id="3100">
+				<function start="2" end="3" mask="11111111b" comment="V_ASP_IN">00, 32</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="00001EF6" name="HU_NBT_EVO" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Ajuste automático de la hora">
+			<group id="3000">
+				<function start="19" end="19" mask="00000110b" comment="SETTINGS_TIME_AUTOMATIC">navigation</function>
+				<function start="105" end="105" mask="00100000b" comment="CLOCK_CHANGE_AUTOMATIC">01</function>
+			</group>
+		</code>
+		<code description="Ver vídeo/DMB/Navi mientras conduce (hasta 63 km/h)">
+			<group id="3006">
+				<function start="26" end="26" mask="11111111b" comment="SPEEDLOCK_X_KMH_MAX">1F</function>
+				<function start="25" end="25" mask="11111111b" comment="SPEEDLOCK_X_KMH_MIN">3F</function>
+			</group>
+		</code>
+		<code description="Ver vídeo/DMB/Navi mientras conduce 2">			
+			<group id="3000">
+				<function start="5" end="5" mask="00010000b" comment="VIDEO_FRONT_LOCKED">00</function>
+				<function start="5" end="5" mask="00000100b" comment="VIDEO_HANDBRAKE">00</function>
+				<function start="2" end="2" mask="00000111b" comment="VIDEO_SPEEDLOCK_CONDITION">None</function>
+			</group>
+		</code>
+		<code description="Para que no aparezcan todos los mensajes de advertencia">
+			<group id="3001">
+				<function start="58" end="58" mask="11111111b" comment="LEGAL_DISCLAIMER_TIME">kein_ld</function>
+				<function start="52" end="52" mask="11111111b" comment="MACRO_CAM_LEGALDISCLAIMER">kein_ld</function>
+			</group>
+		</code>
+		<code description="Menú de zoom del remolque activado al dar marcha atrás">
+			<group id="3001">
+				<function start="54" end="54" mask="00000001b" comment="MACRO_TRAILER_COUPLING">01</function>
+			</group>
+		</code>
+		<code description="Las ventanas se cierran cuando llueve.">
+			<group id="3000">
+				<function start="19" end="19" mask="00001000b" comment="REGEN_SCHLIESSEN">01</function>
+			</group>
+		</code>
+		<code description="X-Drive">
+			<group id="3000">
+				<function start="5" end="5" mask="00000001b" comment="COMPASS">01</function>
+				<function start="15" end="15" mask="00000001b" comment="X_VIEW">01</function>
+				<function start="26" end="26" mask="00110000b" comment="X_VIEW_GRAPHIC_SLOP">trajectory1</function>
+				<function start="26" end="26" mask="11000000b" comment="X_VIEW_GRAPHIC_ROLL">trajectory1</function>
+				<function start="110" end="110" mask="00000010b" comment="MOMENTDISTRIBUTION_MENU">01</function>
+			</group>
+		</code>
+		<code description="USB Activación CODE de vídeo 1/2">
+			<group id="3000">
+				<function start="15" end="15" mask="00010000b" comment="ENT_CODEC_OGG">01</function>
+				<function start="15" end="15" mask="00100000b" comment="ENT_CODEC_XVID">01</function>
+				<function start="15" end="15" mask="01000000b" comment="ENT_CODEC_VCD">01</function>
+				<function start="13" end="13" mask="00000100b" comment="ENT_MC_VIDEO_SUPPORT">01</function>
+			</group>
+		</code>
+		<code description="USB Activación CODE de vídeo 2/2">
+			<group id="3003">
+				<function start="32" end="32" mask="00000110b" comment="API_USB_VIDEO">both</function>
+				<function start="32" end="32" mask="00011000b" comment="API_IPOD_VIDEO">both</function>
+			</group>
+		</code>
+		<code description="Cambie el sonido de advertencia por un sonido de Rolls-Royce.">
+			<group id="3002">
+				<function start="26" end="26" mask="00111000b" comment="SOUND_SIGNAL_SET">rolls_royce</function>
+			</group>
+		</code>
+		<code description="Configuración del modo deportivo">
+			<group id="3008">
+				<function start="79" end="79" mask="11000000b" comment="MACRO_FDS">popup_and_config</function>
+			</group>
+			<group id="3009">
+				<function start="9" end="9" mask="00010000b" comment="EFF_DYN_SPORT_CID">01</function>
+				<function start="9" end="9" mask="00100000b" comment="EFF_DYN_SPORT_UNIT">01</function>
+			</group>
+		</code>
+		<code description="Animación de inicio M ">
+			<group id="3001">
+				<function start="62" end="62" mask="00000110b" comment="STARTUP_TYPE">animation</function>
+				<function start="62" end="62" mask="01111000b" comment="STARTUP_EMBLEM">variant_01</function>
+			</group>
+		</code>
+		<code description="barra de control de volumen">
+			<group id="3002">
+				<function start="52" end="52" mask="01000000b" comment="VOLUME_POPUP_DISPLAY">01</function>
+				<function start="52" end="52" mask="10000000b" comment="VOLUME_POPUP_REJECTION">01</function>
+				<function start="53" end="53" mask="00000001b" comment="VOLUME_POPUP_EXCEPTION">01</function>
+			</group>
+		</code>
+		<code description="Pantalla de temperatura de presión y aire TPMC">
+			<group id="3001">
+				<function start="66" end="66" mask="00001100b" comment="RDC_DRUCK_TEMP">druck_und_temperatur</function>
+			</group>
+		</code>
+		<code description="Salida del tono de llamada del teléfono a través del altavoz (solo iPhone)">
+			<group id="3003">
+				<function start="6" end="6" mask="10000000b" comment="INBAND_RINGING">01</function>
+			</group>
+		</code>
+		<code description="Sonido de alarma de apertura/bloqueo de puerta (posible con sensor de zumbador piezoeléctrico)">
+			<group id="3000">
+				<function start="110" end="110" mask="00000001b" comment="ACOUSTICAL_LOCK_CONFIRM">01</function>
+			</group>
+		</code>
+		<code description="Cambio de color del panel de instrumentos de la pantalla M Sport">
+			<group id="3000">
+				<function start="33" end="33" mask="01000000b" comment="M_VEHICLE">01</function>
+			</group>
+		</code>
+		<code description="Asistente de luces de carretera ajustable desde iDrive">
+			<group id="3000">
+				<function start="109" end="109" mask="10000000b" comment="HIGH_BEAM_ASSISTANT">01</function>
+			</group>
+		</code>
+		<code description="Mostrar la imagen de la portada del álbum de la canción que se está reproduciendo actualmente en iDrive">
+			<group id="3000">
+				<function start="9" end="9" mask="00000100b" comment="ENT_BTAS_IAP_COVERART">01</function>
+			</group>
+			<group id="3003">
+				<function start="19" end="19" mask="00000100b" comment="ENT_BTAS_METADATA">01</function>
+				<function start="19" end="19" mask="00001000b" comment="ENT_BTAS_BROWSING">01</function>
+			</group>
+		</code>
+		<code description="Desbloquear código de región de DVD">
+			<group id="3000">
+				<function start="7" end="7" mask="11111111b" comment="ENT_VIDEO_DVD_AREA_CODE">alle_anderen</function>
+			</group>
+		</code>
+		<code description="Pantalla parpadeante en HUD">
+			<group id="300C">
+				<function start="0" end="0" mask="01000000b" comment="HUD_TURNSIGNAL">01</function>
+			</group>
+		</code>
+		<code description="El sistema de sonido cambió a Bang & Olufsen">
+			<group id="3000">
+				<function start="21" end="21" mask="01100000b" comment="HIGH_END_AUDIO_B_UND_W">keine_insz</function>
+			</group>
+		</code>
+		<code description="Activación de Logic 7 (vehículo con opción S667A HiFi)">
+			<group id="3000">
+				<function start="22" end="22" mask="00001000b" comment="LOGIC7_SYMBOL">01</function>
+			</group>
+		</code>
+		<code description="Refuerzo de audio de medios graves">
+			<group id="3002">
+				<function start="29" end="29" mask="00111100b" comment="AUDIO_SYSTEM">highpremium</function>
+				<function start="21" end="21" mask="00000011b" comment="AUDIO_SYSTEM_VAR">variant3</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="0000067B" name="ICMQL" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Modo ecológico predeterminado al iniciar">
+			<group id="3000">
+				<function start="36" end="36" mask="00001000b" comment="IcmKod_B_InitEco">verbaut</function>
+			</group>
+		</code>
+		<code description="Activar el control de crucero">
+			<group id="3000">
+				<function start="128" end="128" mask="00001110b" comment="C_Fahrfunktion">01</function>
+			</group>
+		</code>
+		<code description="Modo Deportes+ activo">
+			<group id="3000">
+				<function start="18" end="18" mask="11111111b" comment="IcmKod_B_S2TBA">verbaut</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="000016EE" name="IHKA_VA02" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Recuerde el último estado del aire acondicionado">
+   			<group id="3003">  
+    				<function start="0" end="0" mask="00000010b" comment="MEMORY_OFF">01</function>
+   			</group>
+		</code>
+		<code description="Incluso si presiono Auto, el aire acondicionado no se enciende."> 
+   			<group id="3003">
+    				<function start="0" end="0" mask="00000100b" comment="AC_ON_WITH_AUTO">00</function>
+   			</group>
+		</code>
+		<code description="Memoria del modo de circulación del aire acondicionado."> 
+   			<group id="3003">
+    				<function start="0" end="0" mask="00000001b" comment="MEMORY_UMLUFT">01</function>
+   			</group>
+		</code>
+ 	</cafd>
+	<cafd id="00001148" name="Kafas2" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Asistente automático de luces altas">
+   			<group id="3050">
+    				<function start="1" end="1" mask="00000001b" comment="FLA_ON_OFF">FLA_on</function>
+    				<function start="6" end="6" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_ON">CN</function>
+    				<function start="7" end="7" mask="11111111b" comment="SPEED_SWITCHING_HIGH_BEAMS_OFF">China</function>
+   			</group>
+		</code>
+ 	</cafd>
+	<cafd id="000009C8" name="KOMBI L7_MID" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Muestra teléfono, entretenimiento y reconocimiento de voz en HUD">
+   			<group id="3003">
+    				<function start="4" end="4" mask="00000001b" comment="HUD_ENTERTAINMENT_ENABLE">01</function>
+    				<function start="5" end="5" mask="00000010b" comment="HUD_STARTUP_ENABLE">01</function>
+   			</group>
+   			<group id="3000">
+    				<function start="42" end="42" mask="00001000b" comment="HUD_VZA_ENABLE">01</function>
+   			</group>
+		</code>
+		<code description="Pantalla parpadeante en HUD">
+			<group id="3003">
+   				<function start="4" end="4" mask="00000001b" comment="HUD_BLINKER_ENABLE">01</function>
+			</group>
+			<group id="3008">
+				<function start="5" end="5" mask="00000001b" comment="HUD_PIA_BLINKER">01</function>
+			</group>
+		</code>
+		<code description="Logotipo mostrado en el panel de instrumentos."> 
+   			<group id="3003">
+    				<function start="7" end="7" mask="00000010b" comment="MPM_ENABLE">01</function>
+   			</group>
+   			<group id="3000">
+    				<function start="43" end="43" mask="11110000b" comment="MPM_LOGO">bmw</function>
+    				<function start="0" end="0" mask="00001111b" comment="BMW_LOGO">01</function>
+   			</group>
+		</code>
+		<code description="Velocidad digital en el panel de instrumentos."> 
+   			<group id="3000">
+    				<function start="1" end="1" mask="00000010b" comment="BC_DIGITAL_V">01</function>
+   			</group>
+		</code>
+		<code description="Desactivar el sonido de la alarma para temperaturas inferiores a 3º">
+			<group id="3000">
+				<function start="30" end="30" mask="00000001b" comment="CC_TEMPERATURWARNUNG">00</function>
+			</group>
+		</code>
+		<code description="Muestra si Auto Stop & Go está activado en el panel de instrumentos">
+			<group id="3003">
+				<function start="6" end="6" mask="00001000b" comment="MSA_VERFUEGBARANZEIGE_ENABLE">01</function>
+			</group>
+		</code>
+		<code description="Usar hora GPS">
+			<group id="3000">
+				<function start="1" end="1" mask="10000000b" comment="GPS_UHR">01</function>
+			</group>
+		</code>
+		<code description="Visualización del rango de marchas en el modo Dynamic Sport">
+			<group id="3000">
+				<function start="41" end="41" mask="00010000b" comment="SPA_SPORT_ENABLE">01</function>
+			</group>
+		</code>
+		<code description="Activar el menú del panel de instrumentos del modo Sport +">
+			<group id="300C">
+				<function start="0" end="0" mask="00001111b" comment="FDS_MENUE_TEXT_1">menue_3</function>
+				<function start="0" end="0" mask="11110000b" comment="FDS_MENUE_SIGNAL_1">menue_3</function>
+				<function start="1" end="1" mask="00001111b" comment="FDS_MENUE_TEXT_2">menue_3</function>
+				<function start="1" end="1" mask="11110000b" comment="FDS_MENUE_SIGNAL_2">menue_3</function>
+				<function start="2" end="2" mask="00001111b" comment="FDS_MENUE_TEXT_3">menue_3</function>
+				<function start="2" end="2" mask="11110000b" comment="FDS_MENUE_SIGNAL_3">menue_3</function>
+				<function start="3" end="3" mask="00001111b" comment="FDS_MENUE_TEXT_4">menue_3</function>
+				<function start="3" end="3" mask="11110000b" comment="FDS_MENUE_SIGNAL_4">menue_3</function>
+				<function start="54" end="54" mask="11111111b" comment="FDS_MENUE">menue_3</function>
+			</group>
+		</code>
+ 	</cafd>
+	<cafd id="000000B5" name="CFAS_PLX_1" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Fácil acceso activado">
+			<group id="3000">
+				<function start="0" end="0" mask="00011100b" comment="EINAUSSTIEGSHILFE">Modus_FA_SLV</function>
+			</group>
+		</code>
+		<code description="Fácil acceso Comience a moverse desde el final">
+			<group id="3012">
+				<function start="4" end="5" mask="11111111b" comment="EAH_SCHUTZFREIRAUM_HINTEN_SLV_PHYS">00, 01</function>
+			</group>
+		</code>
+		<code description="Fácil acceso: comience a moverse cuando quede 1 cm.">
+			<group id="3012">
+				<function start="4" end="5" mask="11111111b" comment="EAH_SCHUTZFREIRAUM_HINTEN_SLV_PHYS">00, 0A</function>
+			</group>
+		</code>
+		<code description="Fácil acceso: comience a moverse cuando quedan 2 cm.">
+			<group id="3012">
+				<function start="4" end="5" mask="11111111b" comment="EAH_SCHUTZFREIRAUM_HINTEN_SLV_PHYS">00, 14</function>
+			</group>
+		</code>
+		<code description="Fácil acceso: comience a moverse cuando quedan 3 cm.">
+			<group id="3012">
+				<function start="4" end="5" mask="11111111b" comment="EAH_SCHUTZFREIRAUM_HINTEN_SLV_PHYS">00, 1E</function>
+			</group>
+		</code>
+		<code description="Distancia de movimiento del asiento Easy Access: 4 cm">
+			<group id="3012">
+				<function start="2" end="3" mask="11111111b" comment="EAH_VERFAHRWEG_SLV_PHYS">00, 28</function>
+			</group>
+		</code>
+		<code description="Distancia de movimiento del asiento de fácil acceso: 5 cm">
+			<group id="3012">
+				<function start="2" end="3" mask="11111111b" comment="EAH_VERFAHRWEG_SLV_PHYS">00, 32</function>
+			</group>
+		</code>
+		<code description="Distancia de movimiento del asiento Easy Access: 6 cm">
+			<group id="3012">
+				<function start="2" end="3" mask="11111111b" comment="EAH_VERFAHRWEG_SLV_PHYS">00, 3C</function>
+			</group>
+		</code>
+		<code description="Distancia de movimiento del asiento Easy Access: 7 cm">
+			<group id="3012">
+				<function start="2" end="3" mask="11111111b" comment="EAH_VERFAHRWEG_SLV_PHYS">00, 46</function>
+			</group>
+		</code>
+		<code description="Hidalgo">
+			<group id="3000">
+				<function start="1" end="1" mask="00000001b" comment="GENTLEMAN">01</function>
+				<function start="0" end="0" mask="00000001b" comment="MEMORY">01</function>
+			</group>
+		</code>
+		<code description="Establecer sonido GONG al guardar la posición de la hoja">
+			<group id="3000">
+				<function start="2" end="2" mask="00001000b" comment="MEMORY_GONG">01</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="000000B6" name="CBFS_PLX_1" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Hidalgo">
+			<group id="3000">
+				<function start="1" end="1" mask="00000001b" comment="GENTLEMAN">01</function>
+				<function start="0" end="0" mask="00000001b" comment="MEMORY">01</function>
+			</group>
+		</code>
+	</cafd>
+	<cafd id="00000223" name="TRSVC" author="분당번개 3GT" series="F20,F21,F22,F23,F30,F31,F32,F33,F3,F34,F35,F36,F80,F82,F83">
+		<code description="Ajusta la vista lateral para poder verla en cualquier momento">
+   			<group id="3000">
+    				<function start="114" end="114" mask="11111111b" comment="SV_Activate_Speed_Limit">FF</function>
+    				<function start="115" end="115" mask="11111111b" comment="SV_Deactivate_Speed">FF</function>
+   			</group>
+		</code>
+ 	</cafd>
+	<!--End-Serie-3-F034-->
+	
+	<cafd id="000009C8" name="KOMBI L7_MID" author="Almaretto" series="F020,F030">
+        <code description="Reinicio automático de la computadora de viaje (nunca)">
+            <group id="3000">
+                <function start="44" end="44" comment="BC_AUTORESET_ZEIT" mask="11111111b">FF</function>
+            </group>
+        </code>
+        <code description="Reinicio automático de la computadora de viaje (0 horas)">
+            <group id="3000">
+                <function start="44" end="44" comment="BC_AUTORESET_ZEIT" mask="11111111b">00</function>
+            </group>
+        </code>
+        <code description="DESACTIVAR la pantalla de velocidad digital en el grupo">
+            <group id="3000">
+                <function start="1" end="1" comment="BC_DIGITAL_V" mask="00000010b">nicht_aktiv</function>
+            </group>
+        </code>
+        <code description="HABILITAR la visualización de velocidad digital en el grupo">
+            <group id="3000">
+                <function start="1" end="1" comment="BC_DIGITAL_V" mask="00000010b">aktiv</function>
+            </group>
+        </code>
+        <code description="ENABLE Corrección de velocidad">
+            <group id="3000">
+                <function start="1" end="1" mask="01000000b">Aktiv</function>
+            </group>
+        </code>
+        <code description="DISABLE Corrección de velocidad">
+            <group id="3000">
+                <function start="1" end="1" mask="01000000b">nicht_aktiv</function>
+            </group>
+        </code>
+        <code description="DISABLE Auto Start/Stop notificaiton en cuadro">
+            <group id="3003">
+                <function start="6" end="6" mask="00001000b">nicht_aktiv</function>
+            </group>
+        </code>
+        <code description="HABILITAR Grupo de instrumentos blanco de día por la noche">
+            <group id="3007">
+                <function start="10" end="10" mask="11111111b">FF</function>
+            </group>
+        </code>
+        <code description="ENABLE Función LIM. Parte 1 de 2. Ver ICM">
+            <group id="3003">
+                <function start="3" end="3" mask="00000001b">aktiv</function>
+            </group>
+        </code>
+        <code description="Cambia el logotipo de inicio del grupo de instrumentos M3/M4 a GTS">
+            <group id="3000">
+                <function start="0" end="0" mask="11110000b">0C</function>
+            </group>
+        </code>
+        <code description="HABILITE la visión nocturna con detección de peatones en segundo plano. Parte 1 de 2. Ver NIVI">
+            <group id="3003">
+                <function start="7" end="7" comment="FGS_NIVI_KI_ENABLE" mask="00001000b">aktiv</function>
+            </group>
+        </code>
+    </cafd>
+</FDL>
