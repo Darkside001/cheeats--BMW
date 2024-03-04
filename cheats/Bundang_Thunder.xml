@@ -1380,7 +1380,7 @@
 				<function start="0" end="0" mask="00010000b" comment="TCM_MSA_DEFAULT_OFF">01</function>
 			</group>
 		</code>
-		<code description="Stop & Go recuerda el último estado">
+		<code description="Start/Stop recuerda el último estado">
 			<group id="3023">
 				<function start="0" end="0" mask="00100000b" comment="TCM_MSA_MEMORY">01</function>
 			</group>
