@@ -226,19 +226,6 @@
 				<function start="105" end="105" mask="00100000b" comment="CLOCK_CHANGE_AUTOMATIC">01</function>
 			</group>
 		</code>
-		<code description="Ver vídeo/DMB/Navi mientras conduce (hasta 63 km/h)">
-			<group id="3006">
-				<function start="26" end="26" mask="11111111b" comment="SPEEDLOCK_X_KMH_MAX">1F</function>
-				<function start="25" end="25" mask="11111111b" comment="SPEEDLOCK_X_KMH_MIN">3F</function>
-			</group>
-		</code>
-		<code description="Ver vídeo/DMB/Navi mientras conduce 2">			
-			<group id="3000">
-				<function start="5" end="5" mask="00010000b" comment="VIDEO_FRONT_LOCKED">00</function>
-				<function start="5" end="5" mask="00000100b" comment="VIDEO_HANDBRAKE">00</function>
-				<function start="2" end="2" mask="00000111b" comment="VIDEO_SPEEDLOCK_CONDITION">None</function>
-			</group>
-		</code>
 		<code description="Para que no aparezcan todos los mensajes de advertencia">
 			<group id="3001">
 				<function start="58" end="58" mask="11111111b" comment="LEGAL_DISCLAIMER_TIME">kein_ld</function>
@@ -349,20 +336,9 @@
 				<function start="0" end="0" mask="01000000b" comment="HUD_TURNSIGNAL">01</function>
 			</group>
 		</code>
-		<code description="El sistema de sonido cambió a Bang  Olufsen">
-			<group id="3000">
-				<function start="21" end="21" mask="01100000b" comment="HIGH_END_AUDIO_B_UND_W">keine_insz</function>
-			</group>
-		</code>
 		<code description="Activación de Logic 7 (vehículo con opción S667A HiFi)">
 			<group id="3000">
 				<function start="22" end="22" mask="00001000b" comment="LOGIC7_SYMBOL">01</function>
-			</group>
-		</code>
-		<code description="Refuerzo de audio de medios graves">
-			<group id="3002">
-				<function start="29" end="29" mask="00111100b" comment="AUDIO_SYSTEM">highpremium</function>
-				<function start="21" end="21" mask="00000011b" comment="AUDIO_SYSTEM_VAR">variant3</function>
 			</group>
 		</code>
 	</cafd>
